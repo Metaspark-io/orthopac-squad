@@ -5,6 +5,7 @@ import Ribbon from './ribbon';
 import VideoHero from './videoHero';
 import Nav from './nav';
 import Issue from './issue';
+import Carousel from './carousel';
 
 import './style.scss';
 
@@ -42,6 +43,7 @@ const Layout = ({ children }) => (
       <Issue/>
       <Issue/>
     </div>
+    <Carousel/>
 	</React.Fragment>
 );
 
