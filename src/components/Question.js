@@ -14,7 +14,9 @@ const MultipleChoice = ({ question, formKey, answers }) => {
                 className="form-check-input"
                 type="radio"
                 name={formKey}
-                id={id} value={value}
+                id={id}
+                value={value}
+                required
               />
               <label className="form-check-label" htmlFor={id}>{label}</label>
             </div>
@@ -37,6 +39,7 @@ const Slider = ({ question, formKey, range }) => {
         step={1}
         min={range.lower}
         max={range.upper}
+        required
       />
     </FormGroup>
   )
@@ -52,6 +55,7 @@ const TextArea = ({ question, formKey, textfield }) => {
         className="form-control"
         id={formKey}
         name={formKey}
+        required
       />
     </FormGroup>
   )
