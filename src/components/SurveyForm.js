@@ -35,6 +35,16 @@ export default class SurveyForm extends Component {
             <Question key={i} question={question}/>
           ))
         }
+        <div className="form-group">
+          <label className="h3">Your email</label>
+          <input
+            type="email"
+            name="email"
+            className="form-control"
+            placeholder="JaneDoe@example.com"
+            required
+          />
+        </div>
         <button className="btn btn-primary btn-lg" type="submit">
           Find Out Now
         </button>
