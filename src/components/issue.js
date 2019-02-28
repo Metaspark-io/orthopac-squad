@@ -5,13 +5,13 @@ import {MdExpandMore} from 'react-icons/md';
 export default class Issue extends Component {
   render() {
     return (
-      <div class="row py-3 mb-5 bg-light">
+      <div class="py-5 border-dark border-top">
         <div class="col-12">
           <h3 class="text-center">The Battle of Proliferating Paperwork!</h3>
           <h4 class="text-center">Skeletal Man Vs Red Tape Mummy</h4>
           <div class="row">
             <div class="col-12 col-md-3">
-              <div class="card">
+              <div class="card card-comic">
                 <div class="card-body">
                   <Zoom left cascade>
                     <img src="https://via.placeholder.com/200x400?text=Hero" alt="Hero"/>
@@ -32,7 +32,7 @@ export default class Issue extends Component {
               </div>
             </div>
             <div class="col-12 col-md-3">
-              <div class="card">
+              <div class="card card-comic">
                 <div class="card-body">
                   <Zoom right cascade>
                     <img src="https://via.placeholder.com/200x400?text=Villian" alt="Villian"/>
