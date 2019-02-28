@@ -3,3 +3,16 @@
 
 // Importing bootstrap from node_modules
 @import '~bootstrap/scss/bootstrap.scss';
+
+// Add behind element to look more "comic book-like"
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  z-index: -1;
+  transform: translate(1em, .875em);
+}

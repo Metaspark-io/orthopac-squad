@@ -34,6 +34,8 @@ export default () => (
 					content={data.site.siteMetadata.description}
 				/>
 				<meta itemprop="image" content={data.site.siteMetadata.imageUrl} /> />
+        {/*fonts*/}
+        <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet"/>
 			</Helmet>
 		)}
 	/>
