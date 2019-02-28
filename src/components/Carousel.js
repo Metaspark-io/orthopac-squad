@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
-import Flickity from 'react-flickity-component';
+import React, { Component } from 'react'
+import Flickity from 'react-flickity-component'
 
-import './flixity.css';
+import './flixity.css'
 
 const flickityOptions = {
-    wrapAround: true,
-    adaptiveHeight: true,
-    dragThreshold: 10
+  wrapAround: true,
+  adaptiveHeight: true,
+  dragThreshold: 10
 }
 
 export default class Carousel extends Component {
-  render() {
+  render () {
     return (
       <div class="container py-3 mb-5">
         <Flickity options={flickityOptions}>
@@ -22,6 +22,6 @@ export default class Carousel extends Component {
           <img src="https://via.placeholder.com/800x400?text=Hero6" />
         </Flickity>
       </div>
-    );
+    )
   }
 }

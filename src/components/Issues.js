@@ -1,10 +1,9 @@
-import React, {Component} from 'react';
-import Zoom from 'react-reveal/Zoom';
+import React, { Component } from 'react'
 
-import Issue from './issue';
+import Issue from './Issue'
 
 export default class Issues extends Component {
-  render() {
+  render () {
     return (
       <React.Fragment>
         <div class="container mt-3">
@@ -42,6 +41,6 @@ export default class Issues extends Component {
           </div>
         </div>
       </React.Fragment>
-    );
+    )
   }
 }

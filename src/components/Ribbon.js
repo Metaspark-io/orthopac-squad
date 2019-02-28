@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import { FaSearch} from 'react-icons/fa';
+import React, { Component } from 'react'
+import { FaSearch } from 'react-icons/fa'
 
-import aaosLogo from '../images/aaosLogo.svg';
+import aaosLogo from '../images/aaosLogo.svg'
 
 export default class Ribbon extends Component {
-  render() {
+  render () {
     return (
       <div class="container py-5">
         <div class="row">
@@ -28,6 +28,6 @@ export default class Ribbon extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }

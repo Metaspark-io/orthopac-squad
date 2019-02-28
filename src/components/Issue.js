@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import Zoom from 'react-reveal/Zoom';
-import {MdExpandMore} from 'react-icons/md';
+import React, { Component } from 'react'
+import Zoom from 'react-reveal/Zoom'
+import { MdExpandMore } from 'react-icons/md'
 
 export default class Issue extends Component {
-  render() {
+  render () {
     return (
       <div class="py-5 border-dark border-top">
         <div class="col-12">
@@ -43,6 +43,6 @@ export default class Issue extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
