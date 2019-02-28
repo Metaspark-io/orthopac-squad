@@ -9,7 +9,7 @@ export default class Issues extends Component {
         <div class="container mt-3">
           <div class="row">
             <div class="col-12 col-md-8 mx-auto">
-              <div class="card card-comic">
+              <div class="card card-comic issues-card">
                 <div class="card-body">
                   <h2 class="text-center">The Issues</h2>
                   <p>The American Association of Orthopaedic Surgeons (AAOS) tracks and addresses issues that threaten the ability of orthopedists to provide the highest possible quality of care. Aiding them in their fight is the mighty OrthoPAC Squad: an elite team of heroes dedicated to protecting every orthopedist and their patients. You can bone up on those battles here.</p>
@@ -29,13 +29,15 @@ export default class Issues extends Component {
         <div class="container p-3">
           <div class="row py-3">
             <div class="col-12">
-              <div class="card mb-4">
-                <Issue/>
-                <Issue/>
-                <Issue/>
-                <Issue/>
-                <Issue/>
-                <Issue/>
+              <div class="card card-comic mb-4">
+                <div class="card-body p-0">
+                  <Issue/>
+                  <Issue/>
+                  <Issue/>
+                  <Issue/>
+                  <Issue/>
+                  <Issue/>
+                </div>
               </div>
             </div>
           </div>
