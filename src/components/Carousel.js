@@ -19,7 +19,7 @@ export default class Carousel extends Component {
       return null
     }
     return (
-      <div class="mb-5">
+      <div class="mb-5" id="heroes">
         <Flickity options={flickityOptions}>
           {
             map(HEROES, (hero, k) => (

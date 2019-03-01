@@ -7,7 +7,7 @@ import ISSUES from '../constants/issues'
 export default class Issues extends Component {
   render () {
     return (
-      <React.Fragment>
+      <div class="issues-bg" id="issues">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-8 mx-auto">
@@ -43,7 +43,7 @@ export default class Issues extends Component {
             </div>
           </div>
         </div>
-      </React.Fragment>
+      </div>
     )
   }
 }
