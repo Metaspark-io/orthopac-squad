@@ -14,3 +14,8 @@ $dark: #1e275f;
 $light: #f1eeee;
 
 $link-color: $secondary;
+
+$input-focus-border-color: lighten($secondary, 25%);
+$input-btn-focus-width:       .2rem;
+$input-btn-focus-color:       rgba($input-focus-border-color, .25);
+$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
