@@ -1,6 +1,9 @@
 module.exports = {
   extends: ["standard"],
   plugins: ["standard", "react"],
+  env: {
+    browser: true,
+  },
   rules: {
     "no-var": "error", // optional, recommended when using es6+
     "no-unused-vars": 1, // recommended

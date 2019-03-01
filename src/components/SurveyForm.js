@@ -9,7 +9,9 @@ export default class SurveyForm extends Component {
     e.preventDefault()
     const { target } = e
     const fields = QUESTIONS.map(q => (q.key))
-    const body = {}
+    const body = {
+      email: target.email.value,
+    }
     const data = {}
     fields.forEach(field => {
       const formField = target[field]
@@ -22,13 +24,43 @@ export default class SurveyForm extends Component {
         body[field] = formField.value
       }
     })
+
+    this.sendFormData(target)
     console.log(body) // Will get submitted to a spreadsheet
     console.log(data) // Will be used to figure out hero
   }
 
+  sendFormData = async form => {
+    const body = new FormData(form)
+    const method = form.getAttribute('method')
+    const response = await fetch(
+      window.location.href,
+      {
+        method,
+        body,
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      }
+    )
+    if (response.status !== 200) {
+      console.log('error', response)
+    } else {
+      console.log('success', response)
+    }
+  }
+
   render () {
+    // This form is a netlify form, if this ever moves from netlify it will need
+    // a new endpoint to hit
     return (
-      <form className="survey-form" onSubmit={this.handleSubmit}>
+      <form
+        className="survey-form"
+        onSubmit={this.handleSubmit}
+        data-netlify="true"
+        method="post"
+        name="hero"
+      >
         <h1>Which Hero Are You?</h1>
         {
           QUESTIONS.map((question, i) => (
