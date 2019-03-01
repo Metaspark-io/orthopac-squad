@@ -36,7 +36,7 @@ export default class SurveyForm extends Component {
       body.append(k, json[k])
     })
     fetch(
-      '/survey', // Seems I might need to submit this to root
+      '/hero', // Seems I might need to submit this to root
       {
         method: 'POST',
         body,
@@ -63,6 +63,7 @@ export default class SurveyForm extends Component {
         data-netlify="true"
         method="POST"
         name="hero"
+        action="/hero"
       >
         <h1>Which Hero Are You?</h1>
         {
