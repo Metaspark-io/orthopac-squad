@@ -26,14 +26,14 @@ export default class SurveyForm extends Component {
       }
     })
 
-    this.sendFormData(target)
+    this.sendFormData(body)
     console.log(data) // Will be used to figure out hero
   }
 
   sendFormData = json => {
     const body = new FormData()
-    Object.keys(json).forEach((v, k) => {
-      body.append(k, v)
+    Object.keys(json).forEach(k => {
+      body.append(k, json[k])
     })
     fetch(
       '/', // Seems I might need to submit this to root
