@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Zoom from 'react-reveal/Zoom'
-import { MdExpandMore } from 'react-icons/md'
+import { MdExpandMore, MdExpandLess } from 'react-icons/md'
 
 import Section from './Section'
 
@@ -70,7 +70,7 @@ export default class Issue extends Component {
                     <span
                       onClick={this.toggleReadMore}
                       className="btn btn-link btn-block btn-sm mx-auto text-muted"
-                    >Read More<MdExpandMore/>
+                    >{readMoreExpanded ? <span>Read Less<MdExpandLess/></span> : <span>Read More<MdExpandMore/></span>}
                     </span>
                   </div>
                   <a href="#" className="btn btn-block btn-primary">Join the fight with AAOS</a>

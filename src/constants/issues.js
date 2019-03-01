@@ -55,5 +55,117 @@ export default [
         content: `“We’re up against well-organized, well-financed opponents in our health care policy battles. That’s why we need you in the OrthoPAC squad!”`,
       },
     ]
+  },
+  {
+    title: 'The Battle of the Vertical and Horizontal Integration',
+    heroImage: 'https://via.placeholder.com/200x400?text=Hero',
+    villainImage: 'https://via.placeholder.com/200x400?text=Villian',
+    tagline: 'Ancillary Annie Vs. The Consolidator',
+    intro: 'It’s a showdown at the AAOS corral! After a quarter-century of mega-mergers and large hospital systems using their market power to demand high prices from the privately insured as well as the uninsured, Ancillary Annie has arrived and she’s got The Consolidator dead in her sights! There’s little evidence that hospital mergers lead to higher quality care — especially when they use their market power to demand higher prices. Thank goodness this consolidatin’-hatin’ cowgirl is here to promote choice and competition.',
+    victories: [
+      'Site Neutral in Outpatient Final Rule 2019',
+      'Fighting for Physician Owned Hospitals',
+    ],
+    readMore: [
+      {
+        headline: `Site Neutral in Outpatient Final Rule 2019`,
+        content: `The final rule helps to level the playing field by including expansion of site-neutral payments that would remove incentives for hospitals to employ private practices. It could also potentially lower out-of-pocket for patients with proposals for physician office equivalent payment rates for clinic visits at an off-campus provider-based department (PBD). The rule also updates the ASC payment using the hospital market basket, separates payment for non-opioid pain management, requests progress on education initiatives on TKA policy change, and requests more procedures to come off the IPO list (TSA, TAR).`,
+      },
+      {
+        headline: `Fighting for Physician Owned Hospitals`,
+        content: `AAOS helped secure more than 80 cosponsors for the Patient Access to Higher Quality Healthcare Act. The legislation would lift the expansion and new construction restrictions on physician-owned hospitals (POH) that were included in the Affordable Care Act. Additionally, a Senate companion bill was introduced for the first time for which AAOS helped secure more than 10 original cosponsors.`,
+      },
+      {
+        headline: 'Ancillary Annie Says:',
+        content: `“We must, in these moments of high political passion, fight for our independence. Who’s with me?”`,
+      },
+    ]
+  },
+  {
+    title: 'The Battle of Limited Research Resources',
+    heroImage: 'https://via.placeholder.com/200x400?text=Hero',
+    villainImage: 'https://via.placeholder.com/200x400?text=Villian',
+    tagline: 'Mighty Microscope Vs. The Pretender',
+    intro: `Just when we need it most, research funding for musculoskeletal health has stagnated. Musculoskeletal disorders and diseases are the leading cause of disability in the United States and account for over half of all chronic conditions in people over 50 years of age in developed countries. In fact, one in two adults reported a chronic musculoskeletal condition in 2011. The Mighty Microscope is our champion, advocating for the funding our specialty — and society! — deserves.`,
+    victories: [
+      'PRORP funding triumphs',
+      'Scope of Practice legislation',
+    ],
+    readMore: [
+      {
+        headline: `PRORP funding triumphs`,
+        content: `The Peer Reviewed Orthopaedic Research Program (PRORP), is a Congressionally Directed Medical Research Program that is funded through the Department of Defense. Over the years, AAOS has been able to successfully advocate collectively for well over $300 million dollars for extremity war injury research funding.`,
+      },
+      {
+        headline: `Scope of Practice legislation`,
+        content: `The VA MISSION Act became law on June 6, 2018 and included AAOS-supported language that ended the effort to call podiatrists at the VA “physicians” and allow them direct clinical supervision of MD’s and DO’s. The final language only allows podiatrists a raise and access to non-clinical leadership positions. The legislation was the result of months of negotiation between APMA and AAOS, with the full participation and support of AOFAS. The Joint Task Force of Orthopaedic Surgeons and Podiatric Surgeons was created to continue these conversations.`,
+      },
+      {
+        headline: 'Mighty Microscope says:',
+        content: `“A society that enjoys better overall health, a stronger workforce, and an enhanced quality of life? Thank Orthopaedic research for that.”`,
+      },
+    ]
+  },
+  {
+    title: 'The Battle of For the Love of Liability Reform',
+    heroImage: 'https://via.placeholder.com/200x400?text=Hero',
+    villainImage: 'https://via.placeholder.com/200x400?text=Villian',
+    tagline: 'Radical Reformer Vs. Frivolous Fox',
+    intro: `He’s on a mission to improve patient safety and access to care! In a world where 10% of healthcare spending in the United States can be attributed to the cost of litigation and defensive medicine, the Radical Reformer knows where his duties lie: fighting back against the Frivolous Fox. Liability reform reduces defensive medicine practices and results in serious savings in overall health care expenditures.`,
+    victories: [
+      'Sports Medicine Licensure Clarity Act Becomes Law!',
+      '“Good Samaritan” emerges from committee',
+    ],
+    readMore: [
+      {
+        headline: `Sports Medicine Licensure Clarity Act Becomes Law!`,
+        content: `The Sports Medicine Licensure Clarity Act (H.R.302), was signed into law on Oct. 5, 2018, after more than five years of tireless advocacy. The legislation originated from AAOS and provides legal protection for traveling team physicians. It also safeguards injured athletes’ timely access to health care professionals who best know their medical histories.`,
+      },
+      {
+        content: `Specifically, the law mandates that liability insurance of a medical professional treating their team in a secondary state should cover that person (subject to premium adjustments) as if treatment was provided in the primary state. Additionally, if two states do not currently have an agreement to provide licensure reciprocity, the provider is to be treated as if they’re practicing in the state in which they’re licensed.`
+      },
+      {
+        headline: `“Good Samaritan” emerges from committee`,
+        content: `The Good Samaritan Health Professionals Act of 2017, which helps protect health care professionals who volunteer their services when a major emergency arises was advanced out of the energy and commerce committee and was included in the Pandemic and All-Hazards Preparedness and Advancing Innovation Act. The AAOS has continually advocated for this legislation and applauded members of Congress for advancing this important measure. Specifically, the bill provided clear liability protections to licensed health care professionals who volunteer health care services to victims during a declared national disaster. Notably, the legislation respects existing medical liability laws and does not protect providers in cases of willful or criminal misconduct, gross negligence, or reckless misconduct.`,
+      },
+      {
+        headline: 'Radical Reformer says:',
+        content: `“Did you know that medical liability reform would save the government $62 billion over 10 years? Yep, ‘billion’ with a ‘b.’”`,
+      },
+    ]
+  },
+  {
+    title: 'The Battle of Mission: Permission',
+    heroImage: 'https://via.placeholder.com/200x400?text=Hero',
+    villainImage: 'https://via.placeholder.com/200x400?text=Villian',
+    tagline: 'Super Specialty Vs. The Bone Breaker',
+    intro: `Prior authorization: the tool of choice for health insurers to deny care? Few issues frustrate physicians more than asking for permission from a patient's insurance company before prescribing medications or performing medical procedures. The time spent by staff members, physicians, and patients on persuading insurance companies is expensive and may detract from patient care. Have no fear, Super Specialty is here — working to reform prior authorization and any barriers patients face when accessing specialty care.`,
+    victories: [
+      'Insurance reforms',
+      'NCOIL adopts AAOS language',
+    ],
+    readMore: [
+      {
+        headline: `Insurance reforms`,
+        content: `The Pennsylvania Orthopaedic Society successfully advocated for HB 2241, a bill that ends the harmful healthcare insurer practice of clawing back paid claims. The General Assembly’s actions ended a ten-year odyssey that pitted the medical community against the healthcare insurance industry. The activity was funded, in part, by the AAOS’s Health Policy Action Fund.`,
+      },
+      {
+        headline: `National Conference of Insurance Legislators (NCOIL) adopts AAOS language`,
+        content: `The NCOIL has accepted AAOS recommendations into their Out-of-Network Balance Billing Transparency Model Act. There is still much work to be done, but here are the major wins for musculoskeletal patients in the model legislation:`,
+      },
+      {
+        content: [
+          `Defining usual, customary, and reasonable as the 80th percentile of charges`,
+          `Exempting emergency services from notification requirements and creating more reasonable requirements for non-emergent OON providers`,
+          `Strengthening requirements of insurers to audit their provider directories`,
+          `Key patient protections limiting out-of-pocket costs to in-network cost sharing requirements per their existing policy.`,
+          `Significantly improved network adequacy requirements`,
+        ]
+      },
+      {
+        headline: 'Super Specialty Says:',
+        content: `“Health care policy should empower patients to decide how their health care dollars are spent. Who doesn’t want easier access to specialists, affordable coverage, and better care?”`,
+      },
+    ]
   }
 ]
