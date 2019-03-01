@@ -10,7 +10,9 @@ const IndexPage = () => (
   <Layout>
     <VideoHero/>
     <Nav/>
-    <Issues/>
+    <div class="issues-bg">
+      <Issues/>
+    </div>
     <Carousel/>
   </Layout>
 )

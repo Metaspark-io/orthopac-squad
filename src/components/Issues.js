@@ -6,7 +6,7 @@ export default class Issues extends Component {
   render () {
     return (
       <React.Fragment>
-        <div class="container mt-3">
+        <div class="container">
           <div class="row">
             <div class="col-12 col-md-8 mx-auto">
               <div class="card card-comic issues-card">
