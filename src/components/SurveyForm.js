@@ -37,7 +37,7 @@ export default class SurveyForm extends Component {
       body.append(k, json[k])
     })
     fetch(
-      '/success?no-cache=1', // This should prevent it from hitting service worker
+      '/?no-cache=1', // This should prevent it from hitting service worker
       {
         method: 'POST',
         body,
@@ -64,7 +64,6 @@ export default class SurveyForm extends Component {
         data-netlify="true"
         method="POST"
         name="hero"
-        action="/success"
         netlify-honeypot="bot-field"
         netlify
       >
