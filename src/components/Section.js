@@ -17,8 +17,8 @@ export default class Section extends Component {
         }
         {
           isArray(content)
-            ? content.map(c => (
-              <li>{c}</li>
+            ? content.map((c, i) => (
+              <li key={i}>{c}</li>
             ))
             : <p>{content}</p>
         }

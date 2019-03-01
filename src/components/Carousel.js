@@ -19,7 +19,7 @@ export default class Carousel extends Component {
       return null
     }
     return (
-      <div class="mb-5" id="heroes">
+      <div className="mb-5" id="heroes">
         <Flickity options={flickityOptions}>
           {
             map(HEROES, (hero, k) => (
@@ -48,13 +48,13 @@ class HeroSlide extends Component {
       villainImage,
     } = this.props
     return (
-      <div class="container mx-5 slide">
-        <div class="card card-comic">
-          <div class="card-body d-flex">
-            <div class="col-12 col-md-4">
-              <img src={image} class="mr-3"/>
+      <div className="container mx-5 slide">
+        <div className="card card-comic">
+          <div className="card-body d-flex">
+            <div className="col-12 col-md-4">
+              <img src={image} className="mr-3"/>
             </div>
-            <div class="col-12 col-md-8">
+            <div className="col-12 col-md-8">
               <h2>{name}</h2>
               {alterEgo && <p>Alter Ego: {alterEgo}</p>}
               <p>{intro}</p>
@@ -62,12 +62,12 @@ class HeroSlide extends Component {
               {sourceOfPower && <p>Source of Power: {sourceOfPower}</p>}
               {randomFact && <p>Random Fact: {randomFact}</p>}
               {duties && <p>Duties: {duties}</p>}
-              <div class="row">
-                <div class="col-12 col-md-8">
+              <div className="row">
+                <div className="col-12 col-md-8">
                   <h3>{villainName}</h3>
                   <p>{villainIntro}</p>
                 </div>
-                <div class="col-12 col-md-4">
+                <div className="col-12 col-md-4">
                   <img src={villainImage} />
                 </div>
               </div>

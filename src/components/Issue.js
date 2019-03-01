@@ -52,8 +52,8 @@ export default class Issue extends Component {
                       <h4>Victories</h4>
                       <ul>
                         {
-                          victories.map(victory => (
-                            <li>{victory}</li>
+                          victories.map((victory, i) => (
+                            <li key={i}>{victory}</li>
                           ))
                         }
                       </ul>
@@ -61,8 +61,8 @@ export default class Issue extends Component {
                   }
                   {
                     readMoreExpanded && readMore &&
-                    readMore.map(section => (
-                      <Section section={section}/>
+                    readMore.map((section, i) => (
+                      <Section key={i} section={section}/>
                     ))
                   }
                   <div className="d-flex align-items-center flex-wrap mb-3">

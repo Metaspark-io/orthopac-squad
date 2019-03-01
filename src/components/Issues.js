@@ -7,13 +7,13 @@ import ISSUES from '../constants/issues'
 export default class Issues extends Component {
   render () {
     return (
-      <div class="issues-bg" id="issues">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-8 mx-auto">
-              <div class="card card-comic issues-card">
-                <div class="card-body">
-                  <h2 class="text-center">The Issues</h2>
+      <div className="issues-bg" id="issues">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-8 mx-auto">
+              <div className="card card-comic issues-card">
+                <div className="card-body">
+                  <h2 className="text-center">The Issues</h2>
                   <p>The American Association of Orthopaedic Surgeons (AAOS) tracks and addresses issues that threaten the ability of orthopedists to provide the highest possible quality of care. Aiding them in their fight is the mighty OrthoPAC Squad: an elite team of heroes dedicated to protecting every orthopedist and their patients. You can bone up on those battles here.</p>
                   <ul>
                     <li>The Battle of Proliferating Paperwork!</li>
@@ -28,14 +28,14 @@ export default class Issues extends Component {
             </div>
           </div>
         </div>
-        <div class="container p-3">
-          <div class="row py-3">
-            <div class="col-12">
-              <div class="card card-comic mb-4">
-                <div class="card-body p-0">
+        <div className="container p-3">
+          <div className="row py-3">
+            <div className="col-12">
+              <div className="card card-comic mb-4">
+                <div className="card-body p-0">
                   {
-                    ISSUES.map(issue => (
-                      <Issue {...issue}/>
+                    ISSUES.map((issue, i) => (
+                      <Issue key={i} {...issue}/>
                     ))
                   }
                 </div>
