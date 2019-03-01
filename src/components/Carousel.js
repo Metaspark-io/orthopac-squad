@@ -32,7 +32,11 @@ export default class Carousel extends Component {
   }
 }
 
-class HeroSlide extends Component {
+export class HeroSlide extends Component {
+  defaultProps = {
+    slide: true
+  }
+
   render () {
     const {
       name,
@@ -46,9 +50,10 @@ class HeroSlide extends Component {
       villainName,
       villainIntro,
       villainImage,
+      slide,
     } = this.props
     return (
-      <div className="container mx-5 slide">
+      <div className={slide ? 'container mx-5 slide' : '' }>
         <div className="card card-comic">
           <div className="card-body d-flex">
             <div className="col-12 col-md-4">
