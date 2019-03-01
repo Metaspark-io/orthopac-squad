@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import Issue from './Issue'
 
+import ISSUES from '../constants/issues'
+
 export default class Issues extends Component {
   render () {
     return (
@@ -31,12 +33,11 @@ export default class Issues extends Component {
             <div class="col-12">
               <div class="card card-comic mb-4">
                 <div class="card-body p-0">
-                  <Issue/>
-                  <Issue/>
-                  <Issue/>
-                  <Issue/>
-                  <Issue/>
-                  <Issue/>
+                  {
+                    ISSUES.map(issue => (
+                      <Issue {...issue}/>
+                    ))
+                  }
                 </div>
               </div>
             </div>
