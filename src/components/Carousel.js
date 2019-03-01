@@ -10,7 +10,7 @@ const flickityOptions = {
 }
 
 export default class Carousel extends Component {
-  render() {
+  render () {
     if (typeof window !== 'undefined') {
       return (
         <div class="mb-5">
@@ -30,7 +30,7 @@ export default class Carousel extends Component {
 }
 
 class HeroSlide extends Component {
-  render() {
+  render () {
     return (
       <div class="container mx-5 slide">
         <div class="card card-comic">
@@ -57,6 +57,6 @@ class HeroSlide extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
