@@ -10,22 +10,35 @@ export default class SurveyForm extends Component {
     const { target } = e
     const fields = QUESTIONS.map(q => (q.key))
     const data = {}
+    const body = {
+      email: target.email.value,
+      'form-name': target['form-name'].value,
+    } // Contains more human readable responses
     fields.forEach(field => {
       const formField = target[field]
       data[field] = formField.value
+      if (formField.length > 0) {
+        let value
+        formField.forEach(f => { if (f.value === formField.value) { value = f.id } })
+        body[field] = value
+      } else {
+        body[field] = formField.value
+      }
     })
 
     this.sendFormData(target)
     console.log(data) // Will be used to figure out hero
   }
 
-  sendFormData = form => {
-    const body = new FormData(form)
-    const method = form.getAttribute('method')
+  sendFormData = json => {
+    const body = new FormData()
+    Object.keys(json).forEach((v, k) => {
+      body.append(k, v)
+    })
     fetch(
       '/', // Seems I might need to submit this to root
       {
-        method,
+        method: 'POST',
         body,
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
