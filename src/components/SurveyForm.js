@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import { countBy, includes } from 'lodash'
 
 import Question from './Question'
 
 import QUESTIONS from '../constants/survey'
+import HEROES from '../constants/heroes'
 
 export default class SurveyForm extends Component {
   handleSubmit = e => {
@@ -11,10 +13,11 @@ export default class SurveyForm extends Component {
     const fields = QUESTIONS.map(q => (q.key))
     const data = {}
     const body = {
+      // Adding values that we need from form
       email: target.email.value,
       'form-name': target['form-name'].value,
       'bot-field': target['bot-field'].value,
-    } // Contains more human readable responses
+    }
     fields.forEach(field => {
       const formField = target[field]
       data[field] = formField.value
@@ -27,8 +30,14 @@ export default class SurveyForm extends Component {
       }
     })
 
-    this.sendFormData(body)
-    console.log(data) // Will be used to figure out hero
+    this.sendFormData(body).then(response => {
+      if (response.ok) {
+        const heroResult = getMaxHero(data)
+        this.props.handleResult(heroResult)
+      }
+    }).catch(err => {
+      alert(err)
+    })
   }
 
   sendFormData = json => {
@@ -36,7 +45,7 @@ export default class SurveyForm extends Component {
     Object.keys(json).forEach(k => {
       body.append(k, json[k])
     })
-    fetch(
+    return fetch(
       '/?no-cache=1', // This should prevent it from hitting service worker
       {
         method: 'POST',
@@ -45,13 +54,7 @@ export default class SurveyForm extends Component {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
       }
-    ).then(response => {
-      if (response.ok) {
-        console.log('success', response)
-      }
-    }).catch(err => {
-      console.log(err)
-    })
+    )
   }
 
   render () {
@@ -65,7 +68,7 @@ export default class SurveyForm extends Component {
         method="POST"
         name="hero"
         netlify-honeypot="bot-field"
-        netlify
+        netlify="true"
       >
         <h1>Which Hero Are You?</h1>
         {
@@ -94,4 +97,20 @@ export default class SurveyForm extends Component {
       </form>
     )
   }
+}
+
+const getMaxHero = results => {
+  const heroKeys = Object.keys(HEROES)
+  // Create count object with occurences of hero keys
+  let count = countBy(results, result => {
+    if (includes(heroKeys, result)) {
+      return result
+    }
+  })
+  // We don't want to select an undefined value
+  if (count['undefined']) {
+    delete count['undefined']
+  }
+  // Returns a single value even if they have the same number of occurences as others
+  return Object.keys(count).reduce((a, b) => (count[a] > count[b] ? a : b))
 }
