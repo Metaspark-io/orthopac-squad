@@ -1,22 +1,21 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
 import Layout from '../components/Layout'
 import Nav from '../components/Nav'
 import SurveyForm from '../components/SurveyForm'
 import SurveyResults from '../components/SurveyResults'
 
-export default class SurveyPage extends Component{
-
+export default class SurveyPage extends Component {
   state = {
     result: null,
   }
 
-  handleResult = (result) => {
-    this.setState({result})
+  handleResult = result => {
+    this.setState({ result })
   }
 
-  render(){
-    const {result} = this.state
+  render () {
+    const { result } = this.state
     return (
       <Layout>
         <Nav/>
