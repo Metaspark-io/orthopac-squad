@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 
 import Issue from './Issue'
 
+import ISSUES from '../constants/issues'
+
 export default class Issues extends Component {
   render () {
     return (
-      <React.Fragment>
+      <div class="issues-bg" id="issues">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-8 mx-auto">
@@ -31,18 +33,17 @@ export default class Issues extends Component {
             <div class="col-12">
               <div class="card card-comic mb-4">
                 <div class="card-body p-0">
-                  <Issue/>
-                  <Issue/>
-                  <Issue/>
-                  <Issue/>
-                  <Issue/>
-                  <Issue/>
+                  {
+                    ISSUES.map(issue => (
+                      <Issue {...issue}/>
+                    ))
+                  }
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </React.Fragment>
+      </div>
     )
   }
 }
