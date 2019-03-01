@@ -19,26 +19,25 @@ export default class SurveyForm extends Component {
     console.log(data) // Will be used to figure out hero
   }
 
-  sendFormData = async form => {
+  sendFormData = form => {
     const body = new FormData(form)
     const method = form.getAttribute('method')
-    try {
-      const response = await fetch(
-        window.location.href,
-        {
-          method,
-          body,
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
-        }
-      )
+    fetch(
+      window.location.href,
+      {
+        method,
+        body,
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      }
+    ).then(response => {
       if (response.ok) {
         console.log('success', response)
       }
-    } catch (e) {
-      console.log('error', e)
-    }
+    }).catch(err => {
+      console.log(err)
+    })
   }
 
   render () {
