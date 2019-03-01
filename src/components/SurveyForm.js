@@ -9,44 +9,35 @@ export default class SurveyForm extends Component {
     e.preventDefault()
     const { target } = e
     const fields = QUESTIONS.map(q => (q.key))
-    const body = {
-      email: target.email.value,
-    }
     const data = {}
     fields.forEach(field => {
       const formField = target[field]
       data[field] = formField.value
-      if (formField.length > 0) {
-        let value
-        formField.forEach(f => { if (f.value === formField.value) { value = f.id } })
-        body[field] = value
-      } else {
-        body[field] = formField.value
-      }
     })
 
     this.sendFormData(target)
-    console.log(body) // Will get submitted to a spreadsheet
     console.log(data) // Will be used to figure out hero
   }
 
   sendFormData = async form => {
     const body = new FormData(form)
     const method = form.getAttribute('method')
-    const response = await fetch(
-      window.location.href,
-      {
-        method,
-        body,
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
+    try {
+      const response = await fetch(
+        window.location.href,
+        {
+          method,
+          body,
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        }
+      )
+      if (response.ok) {
+        console.log('success', response)
       }
-    )
-    if (response.status !== 200) {
-      console.log('error', response)
-    } else {
-      console.log('success', response)
+    } catch (e) {
+      console.log('error', e)
     }
   }
 
@@ -77,6 +68,10 @@ export default class SurveyForm extends Component {
             required
           />
         </div>
+        {
+          // We need this hidden field to connect it with netlify form
+        }
+        <input type="hidden" name="form-name" value="hero" />
         <button className="btn btn-primary btn-lg" type="submit">
           Find Out Now
         </button>
