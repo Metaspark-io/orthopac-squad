@@ -37,7 +37,7 @@ export default class SurveyForm extends Component {
       body.append(k, json[k])
     })
     fetch(
-      '/success', // Seems I might need to submit this to root
+      '/success?no-cache=1', // This should prevent it from hitting service worker
       {
         method: 'POST',
         body,
