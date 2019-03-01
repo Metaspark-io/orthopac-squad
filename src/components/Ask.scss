@@ -1,0 +1,32 @@
+.ask-bg {
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    // sass-lint:disable-block no-color-literals indentation
+    background-image: url('../images/halftone-wave-light.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: ' ';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    will-change: transform; //Force hardware acceleration to improve scroll performance
+    z-index: 0;
+  }
+  &.ask-dark{
+    &::before {
+      background-image: url('../images/halftone-wave-dark.png');
+    }
+  }
+
+  .card-body.ask-card {
+    background-image: url('../images/halftone-gradient-light-right.png');
+    background-position: center right;
+    background-repeat: repeat-y;
+    background-size: 60%;
+  }
+}

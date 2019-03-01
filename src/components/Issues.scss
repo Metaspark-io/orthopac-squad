@@ -1,16 +1,42 @@
+.issues-bg {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    // sass-lint:disable-block no-color-literals indentation
+    background-image: url('../images/halftone-wave-dark.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: ' ';
+    height: 100%;
+    left: 0;
+    position: fixed; // instead of background-attachment
+    top: 0;
+    width: 100%;
+    will-change: transform; //Force hardware acceleration to improve scroll performance
+    z-index: -1;
+  }
+}
+
 .issues-card {
   transform: translateY(5rem);
   z-index: 2;
 }
 
 .issue {
+  background-image: url('../images/halftone-gradient-light.png');
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 50%;
   border-top: $card-border-width solid $card-border-color;
   padding: 5rem 0 2rem;
+
   &:first-child {
-    border: none;
-    padding: 2rem 0;
+    border: 0;
     margin-top: 5rem;
+    padding: 2rem 0;
   }
+
   &:last-child {
     margin-bottom: 0;
   }

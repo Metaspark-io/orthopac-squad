@@ -1,28 +1,32 @@
+// sass-lint:disable clean-import-paths
+
 // Importing variables
 @import './variables.scss';
-
-// Importing component specific CSS
-@import './Issues.scss';
 
 // Importing bootstrap from node_modules
 @import '~bootstrap/scss/bootstrap.scss';
 
+// Importing component specific CSS
+@import './Ask.scss';
+@import './Issues.scss';
+
 // Add behind element to look more "comic book-like"
-.card-comic{
-  .card-body{
-    background: white;
+.card-comic {
+  .card-body {
+    background: $white;
     z-index: 1;
   }
+
   &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    background: $black;
     bottom: 0;
-    background: black;
-    z-index: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     transform: translate(1em, .875em);
+    z-index: 0;
   }
 }
 

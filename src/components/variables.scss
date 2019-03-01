@@ -1,7 +1,16 @@
 // VARIABLES
 $font-size-base: .875rem;
 $font-family-base: 'Arvo', serif;
+$headings-font-weight: 700;
+
 $border-width: 2px;
 $card-border-width: ($border-width * 2);
 $card-border-radius: 0;
-$card-border-color: black;
+$card-border-color: #000;
+
+$secondary: #455bdc;
+$primary: #cd1232;
+$dark: #1e275f;
+$light: #f1eeee;
+
+$link-color: $secondary;
