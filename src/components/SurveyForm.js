@@ -23,7 +23,7 @@ export default class SurveyForm extends Component {
     const body = new FormData(form)
     const method = form.getAttribute('method')
     fetch(
-      window.location.href,
+      '/', // Seems I might need to submit this to root
       {
         method,
         body,
