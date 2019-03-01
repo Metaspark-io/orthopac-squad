@@ -3,17 +3,17 @@
 	"description": "Hero site for the OrthoPAC Squad",
 	"version": "1.3.0",
 	"author": "MetaSpark <rick@metaspark.io>",
-  "engines": {
-    "node": "^10.15.2"
-  },
+	"engines": {
+		"node": "^10.15.1"
+	},
 	"dependencies": {
 		"bootstrap": "^4.3.1",
 		"gatsby": "^2.1.4",
 		"gatsby-image": "^2.0.29",
 		"gatsby-plugin-google-analytics": "^2.0.14",
 		"gatsby-plugin-manifest": "^2.0.17",
-		"gatsby-plugin-offline": "^2.0.23",
 		"gatsby-plugin-react-helmet": "^3.0.6",
+		"gatsby-plugin-remove-serviceworker": "^1.0.0",
 		"gatsby-plugin-sass": "^2.0.10",
 		"gatsby-plugin-sharp": "^2.0.20",
 		"gatsby-plugin-sitemap": "^2.0.5",

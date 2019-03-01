@@ -40,9 +40,8 @@ module.exports = {
 				anonymize: true
 			}
 		},
-		`gatsby-plugin-sitemap`
-		// this (optional) plugin enables Progressive Web App + Offline functionality
-		// To learn more, visit: https://gatsby.app/offline
-		// 'gatsby-plugin-offline',
+		`gatsby-plugin-sitemap`,
+    `gatsby-plugin-remove-serviceworker`,
+
 	]
 };
