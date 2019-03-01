@@ -48,7 +48,7 @@ export default class SurveyForm extends Component {
         className="survey-form"
         onSubmit={this.handleSubmit}
         data-netlify="true"
-        method="post"
+        method="POST"
         name="hero"
       >
         <h1>Which Hero Are You?</h1>
