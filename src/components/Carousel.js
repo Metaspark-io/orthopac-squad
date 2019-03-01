@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Flickity from 'react-flickity-component'
 
-import './flixity.css'
+import './flickity.css'
 
 const flickityOptions = {
   wrapAround: true,
