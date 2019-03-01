@@ -34,6 +34,8 @@ export default class SurveyForm extends Component {
       if (response.ok) {
         const heroResult = getMaxHero(data)
         this.props.handleResult(heroResult)
+      } else {
+        alert('An error occured')
       }
     }).catch(err => {
       alert(err)
