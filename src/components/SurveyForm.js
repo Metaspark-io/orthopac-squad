@@ -13,6 +13,7 @@ export default class SurveyForm extends Component {
     const body = {
       email: target.email.value,
       'form-name': target['form-name'].value,
+      'bot-field': target['bot-field'].value,
     } // Contains more human readable responses
     fields.forEach(field => {
       const formField = target[field]
@@ -64,6 +65,8 @@ export default class SurveyForm extends Component {
         method="POST"
         name="hero"
         action="/success"
+        netlify-honeypot="bot-field"
+        netlify
       >
         <h1>Which Hero Are You?</h1>
         {
@@ -85,6 +88,7 @@ export default class SurveyForm extends Component {
           // We need this hidden field to connect it with netlify form
         }
         <input type="hidden" name="form-name" value="hero" />
+        <label className="d-none">Don’t fill this out if you're human: <input name="bot-field"/></label>
         <button className="btn btn-primary btn-lg" type="submit">
           Find Out Now
         </button>
