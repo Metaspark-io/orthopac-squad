@@ -36,7 +36,7 @@ export default class SurveyForm extends Component {
       body.append(k, json[k])
     })
     fetch(
-      '/', // Seems I might need to submit this to root
+      '/survey', // Seems I might need to submit this to root
       {
         method: 'POST',
         body,
