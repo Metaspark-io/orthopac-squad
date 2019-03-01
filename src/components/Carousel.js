@@ -9,7 +9,8 @@ import './flickity.css'
 const flickityOptions = {
   wrapAround: true,
   dragThreshold: 10,
-  imagesLoaded: true
+  imagesLoaded: true,
+  reloadOnUpdate: true, // needed so it renders correct out the gate
 }
 
 export default class Carousel extends Component {
