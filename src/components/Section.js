@@ -17,9 +17,12 @@ export default class Section extends Component {
         }
         {
           isArray(content)
-            ? content.map((c, i) => (
-              <li key={i}>{c}</li>
-            ))
+            ? <ul>
+              { content.map((c, i) => (
+                <li key={i}>{c}</li>
+              ))
+              }
+            </ul>
             : <p>{content}</p>
         }
       </React.Fragment>

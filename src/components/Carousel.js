@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
-import Flickity from 'react-flickity-component'
 import { map } from 'lodash'
 
 import HEROES from '../constants/heroes'
 
 import './flickity.css'
+let Flickity = () => (null)
+if (typeof window !== 'undefined') {
+  Flickity = require('react-flickity-component')
+}
 
 const flickityOptions = {
   wrapAround: true,
@@ -14,16 +17,22 @@ const flickityOptions = {
 }
 
 export default class Carousel extends Component {
+  state = {
+    triggerUpdate: false,
+  }
+  componentDidMount () {
+    setTimeout(() => {
+      this.setState({ triggerUpdate: true })
+    }, 1000)
+  }
   render () {
-    if (typeof window === 'undefined') {
-      return null
-    }
+    const { triggerUpdate } = this.state
     return (
       <div className="mb-5" id="heroes">
         <Flickity options={flickityOptions}>
           {
             map(HEROES, (hero, k) => (
-              <HeroSlide key={k} {...hero} />
+              <HeroSlide key={k} triggerUpdate={triggerUpdate} {...hero} />
             ))
           }
         </Flickity>
@@ -33,10 +42,6 @@ export default class Carousel extends Component {
 }
 
 export class HeroSlide extends Component {
-  defaultProps = {
-    slide: true
-  }
-
   render () {
     const {
       name,
@@ -53,7 +58,7 @@ export class HeroSlide extends Component {
       slide,
     } = this.props
     return (
-      <div className={slide ? 'container mx-5 slide' : '' }>
+      <div className={slide ? 'container mx-5 slide' : ''}>
         <div className="card card-comic">
           <div className="card-body d-flex">
             <div className="col-12 col-md-4">
@@ -82,4 +87,8 @@ export class HeroSlide extends Component {
       </div>
     )
   }
+}
+
+HeroSlide.defaultProps = {
+  slide: true
 }
