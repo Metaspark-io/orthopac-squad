@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 
+import DONORS, { getTotalDonations } from '../constants/donors'
+
 export default class Ask extends Component {
   render () {
+    const totalDonations = getTotalDonations()
     return (
       <div className="ask-bg py-5">
         <div className="container">
@@ -19,6 +22,15 @@ export default class Ask extends Component {
                       </div>
                     </div>
                     <div className="col-12 col-md-6">
+                      <p>We have raised: ${totalDonations.toLocaleString()}</p>
+                      <p>A big thanks to our 5k members:</p>
+                      <ul>
+                        {
+                          DONORS.fiveK.map(donor => (
+                            <li>{donor}</li>
+                          ))
+                        }
+                      </ul>
                     </div>
                   </div>
                 </div>
