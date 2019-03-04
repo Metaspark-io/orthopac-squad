@@ -1,8 +1,26 @@
+import sm from '../images/battle/skeletalMan_Battle-01.png'
+import rpm from '../images/battle/redTape_Battle-01.png'
+
+import ll from '../images/battle/LadyLigament_Battle-01.png'
+import rrs from '../images/battle/RubberStamp_Battle-01.png'
+
+import aa from '../images/battle/ancillaryAnnie_Battle-01.png'
+import con from '../images/battle/consolidator_Battle-01.png'
+
+import mm from '../images/battle/mightyMicroscope_Battle-01.png'
+import tp from '../images/battle/Pretender_Battle-01.png'
+
+import rr from '../images/battle/radicalReformer_Battle-01.png'
+import ff from '../images/battle/FrivolousFox_Battle-01.png'
+
+import ss from '../images/battle/superSpeciality_Battle-01.png'
+import bb from '../images/battle/BoneBreakerBattle-01.png'
+
 export default [
   {
     title: 'The Battle of Proliferating Paperwork!',
-    heroImage: 'https://via.placeholder.com/200x400?text=Hero',
-    villainImage: 'https://via.placeholder.com/200x400?text=Villian',
+    heroImage: sm,
+    villainImage: rpm,
     tagline: 'Skeletal Man vs Red Tape Mummy',
     intro: 'At a time when it often feels like paperwork is paramount to patient care, physicians can find themselves spending 50% of their time on paperwork. Blame it on bureaucrats, administrators, lawyers, insurers, coupled with inoperable EHRs (not designed by doctors), along with little clerical support, it all adds to the growing mass of required paperwork. Skeletal Man is here to save the day, selflessly slashing Red Tape and prioritizing patients over paperwork.',
     victories: [
@@ -33,8 +51,8 @@ export default [
   },
   {
     title: 'The Battle of If You Aren’t at the Table, You’re the Main Course',
-    heroImage: 'https://via.placeholder.com/200x400?text=Hero',
-    villainImage: 'https://via.placeholder.com/200x400?text=Villian',
+    heroImage: ll,
+    villainImage: rrs,
     tagline: 'Lady Ligament Vs The Reckless Rubberstamper',
     intro: 'Join everyone’s favorite Flexible Fundraiser on her crusade to stretch OrthoPAC’s reach! As we find the state of health care in uncharted waters, there has never been a more pivotal time for us, as physicians, to be at the helm of the debate. Like it or not, Congress is in our business, looking to dramatically reform our healthcare system, and our adversaries would certainly like to have a say in how we deliver care. Fortunately, Lady Ligament is here to defend our specialty in all political settings! Help her make sure we have a say in how we deliver care — without any reckless rubber-stamping!',
     victories: [
@@ -58,8 +76,8 @@ export default [
   },
   {
     title: 'The Battle of the Vertical and Horizontal Integration',
-    heroImage: 'https://via.placeholder.com/200x400?text=Hero',
-    villainImage: 'https://via.placeholder.com/200x400?text=Villian',
+    heroImage: aa,
+    villainImage: con,
     tagline: 'Ancillary Annie Vs. The Consolidator',
     intro: 'It’s a showdown at the AAOS corral! After a quarter-century of mega-mergers and large hospital systems using their market power to demand high prices from the privately insured as well as the uninsured, Ancillary Annie has arrived and she’s got The Consolidator dead in her sights! There’s little evidence that hospital mergers lead to higher quality care — especially when they use their market power to demand higher prices. Thank goodness this consolidatin’-hatin’ cowgirl is here to promote choice and competition.',
     victories: [
@@ -83,8 +101,8 @@ export default [
   },
   {
     title: 'The Battle of Limited Research Resources',
-    heroImage: 'https://via.placeholder.com/200x400?text=Hero',
-    villainImage: 'https://via.placeholder.com/200x400?text=Villian',
+    heroImage: mm,
+    villainImage: tp,
     tagline: 'Mighty Microscope Vs. The Pretender',
     intro: `Just when we need it most, research funding for musculoskeletal health has stagnated. Musculoskeletal disorders and diseases are the leading cause of disability in the United States and account for over half of all chronic conditions in people over 50 years of age in developed countries. In fact, one in two adults reported a chronic musculoskeletal condition in 2011. The Mighty Microscope is our champion, advocating for the funding our specialty — and society! — deserves.`,
     victories: [
@@ -108,8 +126,8 @@ export default [
   },
   {
     title: 'The Battle of For the Love of Liability Reform',
-    heroImage: 'https://via.placeholder.com/200x400?text=Hero',
-    villainImage: 'https://via.placeholder.com/200x400?text=Villian',
+    heroImage: rr,
+    villainImage: ff,
     tagline: 'Radical Reformer Vs. Frivolous Fox',
     intro: `He’s on a mission to improve patient safety and access to care! In a world where 10% of healthcare spending in the United States can be attributed to the cost of litigation and defensive medicine, the Radical Reformer knows where his duties lie: fighting back against the Frivolous Fox. Liability reform reduces defensive medicine practices and results in serious savings in overall health care expenditures.`,
     victories: [
@@ -136,8 +154,8 @@ export default [
   },
   {
     title: 'The Battle of Mission: Permission',
-    heroImage: 'https://via.placeholder.com/200x400?text=Hero',
-    villainImage: 'https://via.placeholder.com/200x400?text=Villian',
+    heroImage: ss,
+    villainImage: bb,
     tagline: 'Super Specialty Vs. The Bone Breaker',
     intro: `Prior authorization: the tool of choice for health insurers to deny care? Few issues frustrate physicians more than asking for permission from a patient's insurance company before prescribing medications or performing medical procedures. The time spent by staff members, physicians, and patients on persuading insurance companies is expensive and may detract from patient care. Have no fear, Super Specialty is here — working to reform prior authorization and any barriers patients face when accessing specialty care.`,
     victories: [

@@ -86,7 +86,7 @@ export default class Footer extends Component {
             </div>
           </div>
           <small class="text-center d-flex pt-5 pb-3">
-            © 1995-2019 by the American Academy of Orthopaedic Surgeons. "All Rights Reserved." This website and its contents may not be reproduced in whole or in part without written permission. "American Academy of Orthopaedic Surgeons" and its associated seal and "American Association of Orthopaedic Surgeons" and its logo are all registered U.S. trademarks and may not be used without written permission.
+            © 1995-{new Date().getFullYear()} by the American Academy of Orthopaedic Surgeons. "All Rights Reserved." This website and its contents may not be reproduced in whole or in part without written permission. "American Academy of Orthopaedic Surgeons" and its associated seal and "American Association of Orthopaedic Surgeons" and its logo are all registered U.S. trademarks and may not be used without written permission.
           </small>
         </div>
       </footer>
