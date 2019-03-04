@@ -1,6 +1,7 @@
 .issues-bg {
   overflow: hidden;
   position: relative;
+
   &::before {
     // sass-lint:disable-block no-color-literals indentation
     background-image: url('../images/halftone-wave-dark.png');

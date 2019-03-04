@@ -1,0 +1,27 @@
+.ribbon {
+  background-color: $white;
+  font-family: 'Oxygen', Helvetica, sans-serif;
+
+  .ribbon-sso-link {
+    margin-right: 1rem;
+    margin-bottom: .25rem;
+  }
+
+  .ribbon-search {
+    input {
+      border-radius: 2em 0 0 2em;
+      border-right: 0;
+    }
+
+    .btn {
+      border-color: $input-border-color;
+      border-left: 0;
+      border-radius: 0 2em 2em 0;
+      color: darken($input-border-color, 20%);
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
