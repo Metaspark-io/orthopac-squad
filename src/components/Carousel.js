@@ -57,7 +57,7 @@ export class HeroSlide extends Component {
         <div className="card card-comic">
           <div className="card-body d-flex">
             <div className="col-12 col-md-4">
-              <img src={image} className="mr-3"/>
+              <img src={image} className="img-fluid mr-3"/>
             </div>
             <div className="col-12 col-md-8">
               <h2>{name}</h2>
@@ -73,7 +73,7 @@ export class HeroSlide extends Component {
                   <p>{villainIntro}</p>
                 </div>
                 <div className="col-12 col-md-4">
-                  <img src={villainImage} />
+                  <img className="img-fluid" src={villainImage} />
                 </div>
               </div>
             </div>

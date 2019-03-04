@@ -35,9 +35,9 @@ export default class Issue extends Component {
           <div className="row">
             <div className="col-12 col-md-3">
               <div className="card">
-                <div className="card-body">
+                <div className="p1">
                   <Zoom left cascade>
-                    <img src={heroImage} alt="Hero"/>
+                    <img className="img-fluid" src={heroImage} alt="Hero"/>
                   </Zoom>
                 </div>
               </div>
@@ -79,9 +79,9 @@ export default class Issue extends Component {
             </div>
             <div className="col-12 col-md-3">
               <div className="card">
-                <div className="card-body">
+                <div className="p1">
                   <Zoom right cascade>
-                    <img src={villainImage} alt="Villian"/>
+                    <img className="img-fluid" src={villainImage} alt="Villian"/>
                   </Zoom>
                 </div>
               </div>
