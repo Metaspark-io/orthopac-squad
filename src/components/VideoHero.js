@@ -12,7 +12,7 @@ export default class VideoHero extends Component {
         <div className="container d-flex flex-column align-items-center justify-content-center">
           <div className="d-flex flex-column justify-content-center">
             <img className="align-self-center img-fluid p-4 mt-4 w-75" src={Title}/>
-            <button className="btn btn-lg btn-primary align-self-center d-flex rounded-circle p-3">
+            <button className="btn btn-lg btn-primary align-self-center d-flex rounded-circle p-3 border border-white">
               <FaPlay className="pl-1"/>
             </button>
           </div>
