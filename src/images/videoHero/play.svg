@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="coverImage" transform="translate(-930.000000, -354.000000)">
+            <g id="Group-3" transform="translate(933.000000, 357.000000)">
+                <circle id="Oval-2" stroke="#FFFFFF" stroke-width="5" fill="#CF0A2C" cx="57" cy="57" r="57"></circle>
+                <path d="M67.8072141,39.3154424 L86.4525007,73.8885677 C87.5011168,75.8329698 86.7749387,78.2592904 84.8305366,79.3079065 C84.2471328,79.6225362 83.5946856,79.7872551 82.9318493,79.7872551 L45.6412761,79.7872551 C43.4321371,79.7872551 41.6412761,77.9963941 41.6412761,75.7872551 C41.6412761,75.1244188 41.8059949,74.4719716 42.1206246,73.8885677 L60.7659113,39.3154424 C61.8145273,37.3710403 64.2408479,36.6448622 66.18525,37.6934783 C66.8726547,38.0641956 67.4364968,38.6280377 67.8072141,39.3154424 Z" id="Triangle" fill="#FFFFFF" transform="translate(64.286949, 58.500306) rotate(90.000000) translate(-64.286949, -58.500306) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

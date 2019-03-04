@@ -1,7 +1,7 @@
 .cover-image {
   background-image:
     url('../images/videoHero/cover-bg.svg'),
-    linear-gradient(to bottom, lighten($dark, 50%), $dark 100%)
+    linear-gradient(to bottom, lighten($secondary, 35%), $secondary, $dark 100%)
   ;
   background-size: cover;
   background-repeat: no-repeat;
