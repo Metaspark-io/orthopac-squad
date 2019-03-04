@@ -1,13 +1,18 @@
 footer {
   background-color: $footer-color;
   color: $white;
-  z-index: 1;
   font-family: 'Oxygen', Helvetica, sans-serif;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
-  li {
+  -webkit-font-smoothing: antialiased;
+  z-index: 1;
+  .link-list {
+    li {
+      margin-bottom: .5rem;
+    }
     a {
       color: $footer-text;
-      margin-bottom: .875rem;
       &:hover {
         color: $white;
       }
@@ -16,5 +21,33 @@ footer {
   .vcard {
     font-size: .75rem;
     text-transform: none;
+  }
+
+  .footer-social-icons__title {
+    color: #929292;
+    font-size: .75rem;
+    margin-bottom: .5rem;
+  }
+
+  .social-icon {
+    display: inline-block;
+    margin-right: 1rem;
+
+    a {
+      align-items: center;
+      background: #d6d6d6;
+      border-radius: 50%;
+      display: inline-flex;
+      height: 32px;
+      justify-content: center;
+      text-align: center;
+      width: 32px;
+      &:hover {
+        background: $white;
+      }
+      * {
+        fill: $footer-color;
+      }
+    }
   }
 }
