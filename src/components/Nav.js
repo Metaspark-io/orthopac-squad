@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 export default class Nav extends Component {
   render () {
     return (
-      <div className="container-fluid py-2 bg-light sticky-top">
+      <div className="container-fluid py-2 bg-white sticky-top border-bottom">
         <nav className="nav nav-pills nav-fill">
           <a className="nav-item nav-link" href="/#issues">
             <b>The Issues</b>
@@ -18,7 +18,7 @@ export default class Nav extends Component {
             <b>Survey</b>
             <span class="d-block"><small>Got a minute? Discover your Ortho hero identity</small></span>
           </Link>
-          <a className="nav-item nav-link" href="https://google.com" target="_blank">
+          <a className="nav-item nav-link" href="https://www.aaos.org/Advocacy/PAC/?ssopc=1" target="_blank" rel="noopener noreferrer">
             <b>Join the Squad</b>
             <span class="d-block"><small>Donate to be a Hero for medicine</small></span>
           </a>
