@@ -1,5 +1,5 @@
 const donors = {
-  generalDonations: 123456,
+  generalDonations: 1234000,
   oneK: [
     'Craig Akoh, MD',
     'James Davies, MD',
