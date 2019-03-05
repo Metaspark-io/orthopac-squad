@@ -64,9 +64,10 @@ export class HeroSlide extends Component {
         <div className="card card-comic">
           <div className="card-body d-flex flex-wrap">
             <div className="col-12 col-md-4">
-              <img src={image} className="img-fluid mr-3"/>
+              <img src={image} className="img-fluid mr-3" alt={name}/>
             </div>
             <div className="col-12 col-md-8">
+              <small class="text-muted d-block text-uppercase">Hero</small>
               <h2>{name}</h2>
               {alterEgo && <p>Alter Ego: {alterEgo}</p>}
               <p>{intro}</p>
@@ -78,11 +79,12 @@ export class HeroSlide extends Component {
               {pacInfo && <p>Specific OrthoPAC info: {pacInfo}</p>}
               <div className="row">
                 <div className="col-12 col-md-8">
+                  <small class="text-muted d-block text-uppercase">Arch-Nemesis</small>
                   <h3>{villainName}</h3>
                   <p>{villainIntro}</p>
                 </div>
                 <div className="col-12 col-md-4">
-                  <img className="img-fluid" src={villainImage} />
+                  <img className="img-fluid" src={villainImage} alt={villainName} />
                 </div>
               </div>
             </div>
