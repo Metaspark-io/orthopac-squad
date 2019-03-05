@@ -2,8 +2,6 @@
 
 # AAOS OrthoPAC SQuad
 
-> A Quick Way to bootstrap your next Gatsby + Bulma site.
-
 ![ss](https://i.imgur.com/WMHXT1j.png)
 
 ## Demo 💯
