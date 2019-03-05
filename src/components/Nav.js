@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import MediaQuery from 'react-responsive'
+import { MdOpenInNew } from 'react-icons/md'
 
 export default class Nav extends Component {
   render () {
@@ -27,9 +28,9 @@ export default class Nav extends Component {
             </MediaQuery>
           </Link>
           <a className="nav-item nav-link" href="https://www.aaos.org/Advocacy/PAC/?ssopc=1" target="_blank" rel="noopener noreferrer">
-            <b>Join the Squad</b>
+            <b>Join the Squad <MdOpenInNew/></b>
             <MediaQuery minWidth={navBreak}>
-              <span class="d-block"><small>Donate to be a Hero for medicine</small></span>
+              <span class="d-block"><small>Donate to be a Hero for Medicine</small></span>
             </MediaQuery>
           </a>
         </nav>
