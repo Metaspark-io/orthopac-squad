@@ -29,14 +29,22 @@ export default class Ribbon extends Component {
                 >
                   Login / Create Account
                 </a>
-                <div className="input-group ribbon-search">
-                  <input type="text" className="form-control" placeholder="Search AAOS.org" aria-label="Search AAOS"/>
-                  <div className="input-group-append">
-                    <button className="btn" type="button">
-                      <FaSearch/>
-                    </button>
+                <form action="https://www.aaos.org/search.aspx?id=32" method="GET">
+                  <div className="input-group ribbon-search">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Search AAOS.org"
+                      aria-label="Search AAOS" name="srchtext"
+                    />
+                    <input name="id" value="32" type="hidden"/>
+                    <div className="input-group-append">
+                      <button className="btn" type="submit">
+                        <FaSearch/>
+                      </button>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
