@@ -74,7 +74,7 @@ export default class SurveyForm extends Component {
         netlify-honeypot="bot-field"
         netlify="true"
       >
-        <h1>Which Hero Are You?</h1>
+        <h1 className="mb-4">Which Hero Are You?</h1>
         {
           QUESTIONS.map((question, i) => (
             <Question key={i} question={question}/>
