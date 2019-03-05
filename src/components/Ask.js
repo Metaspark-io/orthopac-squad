@@ -90,33 +90,7 @@ export class AskList extends Component {
 }
 
 export class AskThermometer extends Component {
-  state = {
-    totalDonations: TOTAL_DONATIONS,
-  }
-
-  // handle to cancel interval
-  intervalId = null
-
-  componentDidMount () {
-    this.intervalId = setInterval(
-      this.triggerDonationUpdate,
-      3000 // Its updated every 3 seconds
-    )
-  }
-
-  triggerDonationUpdate = () => {
-    const { totalDonations } = this.state
-    // Gives us a number between 1 and 5 times 1000
-    const amt = (Math.floor(Math.random() * 5) + 1) * 1000
-    this.setState({ totalDonations: totalDonations + amt })
-    // We only want to update up to 10k more than starting
-    if (totalDonations > TOTAL_DONATIONS + 10000) {
-      clearInterval(this.intervalId)
-    }
-  }
-
   render () {
-    const { totalDonations } = this.state
     return (
       <div className="container">
         <div className="row">
@@ -126,13 +100,6 @@ export class AskThermometer extends Component {
                 <div className="row">
                   <div className="col-12 col-md-6">
                     <h3 className="h4">Thermometer goes here</h3>
-                    <ul>
-                      {
-                        DONORS.fiveK.map(donor => (
-                          <li className="font-weight-bold">{donor}</li>
-                        ))
-                      }
-                    </ul>
                   </div>
                   <div className="col-12 col-md-6">
                     <h2>The Squad needs you</h2>
@@ -142,6 +109,17 @@ export class AskThermometer extends Component {
                       <a href="https://www.aaos.org/Advocacy/PAC/?ssopc=1" className="btn btn-secondary btn-lg mb-2" rel="noopener noreferrer">Donate to be a Hero for Medicine</a>
                     </div>
                   </div>
+                </div>
+                <div class="marquee">
+                  {
+                    DONORS.oneK.map(donor => (
+                      <span className="font-weight-bold">{donor}</span>
+                    ))
+                  }{
+                    DONORS.twoK.map(donor => (
+                      <span className="font-weight-bold">{donor}</span>
+                    ))
+                  }
                 </div>
               </div>
             </div>
