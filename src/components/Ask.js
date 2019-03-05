@@ -48,7 +48,7 @@ export default class Ask extends Component {
                     </div>
                   </div>
                   <div className="col-12 col-md-6">
-                    <p>We have raised: ${totalDonations.toLocaleString()}</p>
+                    <h3 className="h4">We have raised: ${totalDonations.toLocaleString()}!</h3>
                     <p>A big thanks to our 5k members:</p>
                     <ul>
                       {
