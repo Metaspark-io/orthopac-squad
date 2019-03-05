@@ -51,7 +51,9 @@ export class HeroSlide extends Component {
       superPower,
       sourceOfPower,
       randomFact,
+      randomFact2,
       duties,
+      pacInfo,
       villainName,
       villainIntro,
       villainImage,
@@ -71,7 +73,9 @@ export class HeroSlide extends Component {
               {superPower && <p>Super power: {superPower}</p>}
               {sourceOfPower && <p>Source of Power: {sourceOfPower}</p>}
               {randomFact && <p>Random Fact: {randomFact}</p>}
+              {randomFact2 && <p>Random Fact 2: {randomFact2}</p>}
               {duties && <p>Duties: {duties}</p>}
+              {pacInfo && <p>Specific OrthoPAC info: {pacInfo}</p>}
               <div className="row">
                 <div className="col-12 col-md-8">
                   <h3>{villainName}</h3>
