@@ -30,16 +30,18 @@ export default class SurveyForm extends Component {
       }
     })
 
-    this.sendFormData(body).then(response => {
-      if (response.ok) {
-        const heroResult = getMaxHero(data)
-        this.props.handleResult(heroResult)
-      } else {
-        alert('An error occured')
-      }
-    }).catch(err => {
-      alert(err)
-    })
+    // this.sendFormData(body).then(response => {
+    //   if (response.ok) {
+    //     const heroResult = getMaxHero(data)
+    //     this.props.handleResult(heroResult)
+    //   } else {
+    //     alert('An error occured')
+    //   }
+    // }).catch(err => {
+    //   alert(err)
+    // })
+    const heroResult = getMaxHero(data)
+    this.props.handleResult(heroResult)
   }
 
   sendFormData = json => {
