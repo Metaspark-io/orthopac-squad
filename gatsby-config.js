@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: 'OrthoPAC Sqaud',
-    author: 'Aman Mittal',
-    imageUrl: 'https://i.imgur.com/Vz81GEl.png',
-    description: 'A Project to bootstrap your next Gatsby + Bulma site.',
-    keywords: `Web developer, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Bulma Developer, CSS3, HTML5, Seo, Starter`,
-    siteUrl: `https://www.example.com`
+    author: 'AAOS',
+    imageUrl: 'https://i.imgur.com/WMHXT1j.png',
+    description: 'OrthoPAC Sqaud: Heroes of the AAOS OrthoPAC',
+    keywords: `AAOS, OrthoPAC, PAC, Orthopedic, Doctor, surgeon, donate, join`,
+    siteUrl: `https://orthopac-squad.org`
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -21,11 +21,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Makefolio',
-        short_name: 'Makefolio',
+        name: 'OrthoPAC Squad',
+        short_name: 'OrthoPAC Squad',
         start_url: '/',
-        background_color: '#2980b9',
-        theme_color: '#2980b9',
+        background_color: '#3a4ddb',
+        theme_color: '#3a4ddb',
         display: 'standalone',
         // icon: 'src/images/gatsby-icon.png',
         orientation: 'portrait'
