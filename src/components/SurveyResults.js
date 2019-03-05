@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import { HeroSlide } from './Carousel'
-import Ask from '../components/Ask'
+import { AskList } from '../components/Ask'
 
 import HEROES from '../constants/heroes'
 
@@ -16,7 +16,7 @@ export default class SurveyResults extends Component {
           <HeroSlide slide={false} {...hero}/>
         </div>
         <div className="my-5">
-          <Ask/>
+          <AskList/>
         </div>
       </React.Fragment>
     )
