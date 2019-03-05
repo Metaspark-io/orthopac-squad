@@ -48,14 +48,35 @@ export default class Ask extends Component {
                     </div>
                   </div>
                   <div className="col-12 col-md-6">
-                    <p>We have raised: ${totalDonations.toLocaleString()}</p>
+                    <h3 className="h4">We have raised: ${totalDonations.toLocaleString()}!</h3>
                     <p>A big thanks to our 5k members:</p>
                     <ul>
                       {
                         DONORS.fiveK.map(donor => (
-                          <li>{donor}</li>
+                          <li className="font-weight-bold">{donor}</li>
                         ))
                       }
+                    </ul>
+                    <p>And our other donors:</p>
+                    <ul className="nav nav-fill">
+                      <li className="nav-item">
+                        <a className="nav-link active" href="/3K-Capitol-Club.pdf" target="_blank" rel="noopener noreferrer">$3K Capitol Club</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link active" href="/2K-Capitol-Club.pdf" target="_blank" rel="noopener noreferrer">$2K Capitol Club</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link active" href="/1K-Capitol-Club.pdf" target="_blank" rel="noopener noreferrer">$1K Capitol Club</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/Futures-Capitol-Club.pdf" target="_blank" rel="noopener noreferrer">Future's Capitol Club</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/PAC-Members.pdf" target="_blank" rel="noopener noreferrer">PAC Members</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/Resident-PAC-Members.pdf" target="_blank" rel="noopener noreferrer">Resident PAC Members</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
