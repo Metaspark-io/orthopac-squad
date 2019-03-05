@@ -27,7 +27,8 @@
 		"react-helmet": "^5.2.0",
 		"react-icons": "^3.4.0",
 		"react-responsive": "^6.1.1",
-		"react-reveal": "^1.2.2"
+		"react-reveal": "^1.2.2",
+		"react-transition-group": "^2.6.0"
 	},
 	"keywords": [
 		"gatsby",
