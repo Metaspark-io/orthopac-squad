@@ -10,7 +10,7 @@ export default class Issues extends Component {
       <div className="issues-bg" id="issues">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-8 mx-auto">
+            <div className="col-10 col-md-8 mx-auto">
               <div className="card card-comic issues-card">
                 <div className="card-body">
                   <h2 className="text-center">The Issues</h2>

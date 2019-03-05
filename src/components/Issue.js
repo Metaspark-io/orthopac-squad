@@ -31,9 +31,9 @@ export default class Issue extends Component {
       <div className="issue">
         <div className="col-12">
           <h3 className="text-center">{title}</h3>
-          <h4 className="text-center">{tagline}</h4>
+          <h4 className="text-center font-weight-normal">{tagline}</h4>
           <div className="row">
-            <div className="col-12 col-md-3">
+            <div className="col-6 col-md-3 order-1">
               <div className="card">
                 <div className="p1">
                   <Zoom left cascade>
@@ -42,7 +42,7 @@ export default class Issue extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 order-3 order-md-2">
               <div className="row">
                 <div className="col-12">
                   <p className="mt-5">{intro}</p>
@@ -67,17 +67,18 @@ export default class Issue extends Component {
                   }
                   <div className="d-flex align-items-center flex-wrap mb-3">
                     <hr className="mb-0 w-100"/>
-                    <span
+                    <button
                       onClick={this.toggleReadMore}
-                      className="btn btn-link btn-block btn-sm mx-auto text-muted"
-                    >{readMoreExpanded ? <span>Read Less<MdExpandLess/></span> : <span>Read More<MdExpandMore/></span>}
-                    </span>
+                      className="btn btn-link btn-block mx-auto text-muted"
+                    >
+                      {readMoreExpanded ? <span>Read Less<MdExpandLess/></span> : <span>Read More<MdExpandMore/></span>}
+                    </button>
                   </div>
-                  <a href="#" className="btn btn-block btn-primary">Join the fight with AAOS</a>
+                  <a href="#" className="btn btn-lg btn-block btn-primary">Join the fight with AAOS</a>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-3">
+            <div className="col-6 col-md-3 order-2 order-md-3">
               <div className="card">
                 <div className="p1">
                   <Zoom right cascade>

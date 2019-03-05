@@ -19,13 +19,22 @@ export default class SurveyPage extends Component {
     return (
       <Layout>
         <Nav/>
-        {
-          !result && <SurveyForm handleResult={this.handleResult}/>
-        }
-        {
-          result &&
-          <SurveyResults result={result}/>
-        }
+        <div className="issues-bg">
+          {
+            !result &&
+            <div className="container">
+              <div className="card card-comic my-5">
+                <div className="card-body">
+                  <SurveyForm handleResult={this.handleResult}/>
+                </div>
+              </div>
+            </div>
+          }
+          {
+            result &&
+            <SurveyResults result={result}/>
+          }
+        </div>
       </Layout>
     )
   }

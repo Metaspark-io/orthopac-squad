@@ -60,7 +60,7 @@ export class HeroSlide extends Component {
     return (
       <div className={slide ? 'container mx-5 slide' : ''}>
         <div className="card card-comic">
-          <div className="card-body d-flex">
+          <div className="card-body d-flex flex-wrap">
             <div className="col-12 col-md-4">
               <img src={image} className="img-fluid mr-3"/>
             </div>
