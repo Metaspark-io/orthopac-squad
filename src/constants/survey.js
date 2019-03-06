@@ -53,9 +53,11 @@ export default [
       },
       {
         label: 'Moderate, Support when able ',
+        value: 'moderate',
       },
       {
         label: 'Never have supported',
+        value: 'never',
       },
     ],
   },

@@ -12,13 +12,12 @@ export default class SurveyForm extends Component {
     e.preventDefault()
     const { target } = e
     const fields = QUESTIONS.map(q => (q.key))
-    const data = {
+    const data = {}
+    const bodyToBeSent = {
       // Adding values that we need from form
       email: target.email.value,
       'form-name': target['form-name'].value,
       'bot-field': target['bot-field'].value,
-    }
-    const body = {
     }
     fields.forEach(field => {
       const formField = target[field]
@@ -26,13 +25,13 @@ export default class SurveyForm extends Component {
       if (formField.length > 0) {
         let value
         formField.forEach(f => { if (f.value === formField.value) { value = f.id } })
-        body[field] = value
+        bodyToBeSent[field] = value
       } else {
-        body[field] = formField.value
+        bodyToBeSent[field] = formField.value
       }
     })
 
-    this.sendFormData(data).then(response => {
+    this.sendFormData(bodyToBeSent).then(response => {
       if (response.ok) {
         const heroResult = getMaxHero(data)
         this.props.handleResult(heroResult)
