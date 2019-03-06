@@ -8,7 +8,7 @@ import HEROES from '../constants/heroes'
 
 export default class SurveyForm extends Component {
   handleSubmit = e => {
-    // e.preventDefault()
+    e.preventDefault()
     const { target } = e
     const fields = QUESTIONS.map(q => (q.key))
     const data = {}
