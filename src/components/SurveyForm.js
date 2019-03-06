@@ -44,7 +44,7 @@ export default class SurveyForm extends Component {
 
   sendFormData = json => {
     const body = Object.keys(json)
-      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(json[key]))
       .join('&')
     return fetch(
       '/?no-cache=1', // This should prevent it from hitting service worker
