@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { countBy, includes } from 'lodash'
+import scrollToElement from 'scroll-to-element'
 
 import Question from './Question'
 
@@ -34,6 +35,8 @@ export default class SurveyForm extends Component {
       if (response.ok) {
         const heroResult = getMaxHero(data)
         this.props.handleResult(heroResult)
+        // Scroll to top of results section
+        scrollToElement('.ribbon')
       } else {
         alert('An error occured')
       }
@@ -47,9 +50,9 @@ export default class SurveyForm extends Component {
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(json[key]))
       .join('&')
     return fetch(
-      '/?no-cache=1', // This should prevent it from hitting service worker
+      '/result',
       {
-        method: 'POST',
+        method: 'post',
         body,
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
