@@ -12,12 +12,13 @@ export default class SurveyForm extends Component {
     e.preventDefault()
     const { target } = e
     const fields = QUESTIONS.map(q => (q.key))
-    const data = {}
-    const body = {
+    const data = {
       // Adding values that we need from form
       email: target.email.value,
       'form-name': target['form-name'].value,
       'bot-field': target['bot-field'].value,
+    }
+    const body = {
     }
     fields.forEach(field => {
       const formField = target[field]
