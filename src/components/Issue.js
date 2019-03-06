@@ -16,6 +16,7 @@ export default class Issue extends Component {
 
   render () {
     const {
+      issueNumber,
       title,
       heroImage,
       heroName,
@@ -30,7 +31,7 @@ export default class Issue extends Component {
       readMoreExpanded
     } = this.state
     return (
-      <div className="issue">
+      <div className="issue" id={issueNumber}>
         <div className="col-12">
           <h3 className="text-center">{title}</h3>
           <h4 className="text-center font-weight-normal">{tagline}</h4>
