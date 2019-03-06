@@ -44,11 +44,7 @@ export default [
           'Unprecedented access and representation at more than 1,200 political events, an increase of more than 25 percent from last election cycle. ',
           'Supporting over 320 candidates and members including 56 females, 44 minorities, and 20 physicians, seeing a win rate of 90 percent in the House and 86 percent in the Senate.',
         ]
-      },
-      {
-        headline: 'Skeletal Man Says:',
-        content: `"What would you rather your orthopedic surgeon do: fill out forms, or heal people?"`,
-      },
+      }
     ]
   },
   {
@@ -71,10 +67,6 @@ export default [
       {
         headline: `Increasing our Corporate War Chest and Influence`,
         content: `OrthoPAC amassed 15% growth in just one election cycle! In addition to our exceptional fundraising, our tireless engagement with state and federal lawmakers resulted in a tremendous increase in our political footprint. We are the most active and unified PAC in the entire physician community, with the best participation rate, and are THE largest health care disburser! Additionally, in May of 2016, Lady Ligament created the Advisor’s Circle (AC), our exclusive corporate donor program offering group practices and sub-specialties enhanced legislative and political opportunities. The Circle unites our specialty, while building our corporate dollars. The AC is now 19 members strong, with a 100% retention rate. `,
-      },
-      {
-        headline: 'Lady Ligament Says:',
-        content: `“We’re up against well-organized, well-financed opponents in our health care policy battles. That’s why we need you in the OrthoPAC squad!”`,
       },
     ]
   },
@@ -99,10 +91,6 @@ export default [
         headline: `Fighting for Physician Owned Hospitals`,
         content: `AAOS helped secure more than 80 cosponsors for the Patient Access to Higher Quality Healthcare Act. The legislation would lift the expansion and new construction restrictions on physician-owned hospitals (POH) that were included in the Affordable Care Act. Additionally, a Senate companion bill was introduced for the first time for which AAOS helped secure more than 10 original cosponsors.`,
       },
-      {
-        headline: 'Ancillary Annie Says:',
-        content: `“We must, in these moments of high political passion, fight for our independence. Who’s with me?”`,
-      },
     ]
   },
   {
@@ -125,10 +113,6 @@ export default [
       {
         headline: `Scope of Practice legislation`,
         content: `The VA MISSION Act became law on June 6, 2018 and included AAOS-supported language that ended the effort to call podiatrists at the VA “physicians” and allow them direct clinical supervision of MD’s and DO’s. The final language only allows podiatrists a raise and access to non-clinical leadership positions. The legislation was the result of months of negotiation between APMA and AAOS, with the full participation and support of AOFAS. The Joint Task Force of Orthopaedic Surgeons and Podiatric Surgeons was created to continue these conversations.`,
-      },
-      {
-        headline: 'Mighty Microscope says:',
-        content: `“A society that enjoys better overall health, a stronger workforce, and an enhanced quality of life? Thank Orthopaedic research for that.”`,
       },
     ]
   },
@@ -155,10 +139,6 @@ export default [
       {
         headline: `“Good Samaritan” emerges from committee`,
         content: `The Good Samaritan Health Professionals Act of 2017, which helps protect health care professionals who volunteer their services when a major emergency arises was advanced out of the energy and commerce committee and was included in the Pandemic and All-Hazards Preparedness and Advancing Innovation Act. The AAOS has continually advocated for this legislation and applauded members of Congress for advancing this important measure. Specifically, the bill provided clear liability protections to licensed health care professionals who volunteer health care services to victims during a declared national disaster. Notably, the legislation respects existing medical liability laws and does not protect providers in cases of willful or criminal misconduct, gross negligence, or reckless misconduct.`,
-      },
-      {
-        headline: 'Radical Reformer says:',
-        content: `“Did you know that medical liability reform would save the government $62 billion over 10 years? Yep, ‘billion’ with a ‘b.’”`,
       },
     ]
   },
@@ -191,10 +171,6 @@ export default [
           `Key patient protections limiting out-of-pocket costs to in-network cost sharing requirements per their existing policy.`,
           `Significantly improved network adequacy requirements`,
         ]
-      },
-      {
-        headline: 'Super Specialty Says:',
-        content: `“Health care policy should empower patients to decide how their health care dollars are spent. Who doesn’t want easier access to specialists, affordable coverage, and better care?”`,
       },
     ]
   }
