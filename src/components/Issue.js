@@ -18,7 +18,9 @@ export default class Issue extends Component {
     const {
       title,
       heroImage,
+      heroName,
       villainImage,
+      villianName,
       tagline,
       intro,
       victories,
@@ -37,7 +39,7 @@ export default class Issue extends Component {
               <div className="card">
                 <div className="p1">
                   <Zoom left cascade>
-                    <img className="img-fluid" src={heroImage} alt="Hero"/>
+                    <img className="img-fluid" src={heroImage} alt={heroName}/>
                   </Zoom>
                 </div>
               </div>
@@ -69,12 +71,12 @@ export default class Issue extends Component {
                     <hr className="mb-0 w-100"/>
                     <button
                       onClick={this.toggleReadMore}
-                      className="btn btn-link btn-block mx-auto text-muted"
+                      className="btn btn-link btn-block mx-auto"
                     >
                       {readMoreExpanded ? <span>Read Less<MdExpandLess/></span> : <span>Read More<MdExpandMore/></span>}
                     </button>
                   </div>
-                  <a href="#" className="btn btn-lg btn-block btn-primary">Join the fight with AAOS</a>
+                  <a href="#" className="btn btn-lg btn-block btn-primary">Join the fight with {heroName}</a>
                 </div>
               </div>
             </div>
@@ -82,7 +84,7 @@ export default class Issue extends Component {
               <div className="card">
                 <div className="p1">
                   <Zoom right cascade>
-                    <img className="img-fluid" src={villainImage} alt="Villian"/>
+                    <img className="img-fluid" src={villainImage} alt={villianName}/>
                   </Zoom>
                 </div>
               </div>
