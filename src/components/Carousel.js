@@ -45,7 +45,6 @@ export class HeroSlide extends Component {
   render () {
     const {
       name,
-      alterEgo,
       image,
       intro,
       superPower,

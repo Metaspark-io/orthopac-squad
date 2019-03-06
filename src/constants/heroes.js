@@ -19,7 +19,6 @@ import bb from '../images/villians/BoneBreaker_v2-01.png'
 export default {
   SM: {
     name: 'Skeletal Man',
-    alterEgo: 'John T. Gill, MD',
     image: sm,
     intro: 'Introducing the co-leader of the OrthoPAC Squad! The Skeletal One’s specialty is fundraising for personal contributions that help elect and re-elect champions of MSK care.',
     superPower: 'Flight',
@@ -32,7 +31,6 @@ export default {
   },
   LL: {
     name: 'Lady Ligament',
-    alterEgo: 'Kristy Weber, MD',
     image: ll,
     intro: 'Stretching PAC contributions is this lady’s game! As the co-leader of the OrthoPac squad. She raises funding from specialty and group practices, using corporate dollars to expand the AAOS presence & political footprint.',
     superPower: 'Elasticity',
@@ -46,7 +44,6 @@ export default {
   },
   AA: {
     name: 'Ancillary Annie',
-    alterEgo: 'Ann Ownership',
     image: aa,
     intro: 'Slap latex, pardner! This patient-protectin’ paladin fights for common-folk just looking for better quality of care. Ancillary Annie sets her sights on delivering it at affordable prices and fights the good fight by dedicatin’ herself to increasing choice and competition.',
     superPower: 'Roping up consolidation',
@@ -61,7 +58,6 @@ export default {
   },
   MM: {
     name: 'Mighty Microscope',
-    alterEgo: 'Rhea Search',
     image: mm,
     intro: 'This Ace Analyzer has a vision: to raise awareness of the chronic, debilitating, and costly musculoskeletal diseases and disorders afflicting our nation, and to request continued support for musculoskeletal research. It’s also her duty to help elected officials notice the dangers of allied health professionals who expand their scope of practice beyond what their training and experience safely allows.',
     motivations: 'Protecting the Health of the Public',
@@ -89,7 +85,6 @@ export default {
   },
   RR: {
     name: 'The Radical Reformer',
-    alterEgo: 'Justus James',
     image: rr,
     intro: 'The Radical Reformer believes that there is an urgent need to improve patient safety and access to care through decreasing the need for defensive medicine and reducing the cost of health care. How? Through medical liability reform, of course. Wind him up and watch the transformation begin.',
     superPower: 'Fixes the broken liability system in hopes to improve the overall health care system.',
