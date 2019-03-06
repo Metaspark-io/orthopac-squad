@@ -9,39 +9,39 @@ import HEROES from '../constants/heroes'
 export default class SurveyForm extends Component {
   handleSubmit = e => {
     // e.preventDefault()
-    const { target } = e
-    const fields = QUESTIONS.map(q => (q.key))
-    const data = {}
-    const body = {
-      // Adding values that we need from form
-      email: target.email.value,
-      'form-name': target['form-name'].value,
-      'bot-field': target['bot-field'].value,
-    }
-    fields.forEach(field => {
-      const formField = target[field]
-      data[field] = formField.value
-      if (formField.length > 0) {
-        let value
-        formField.forEach(f => { if (f.value === formField.value) { value = f.id } })
-        body[field] = value
-      } else {
-        body[field] = formField.value
-      }
-    })
-
-    this.sendFormData(body).then(response => {
-      if (response.ok) {
-        // const heroResult = getMaxHero(data)
-        // this.props.handleResult(heroResult)
-      } else {
-        alert('An error occured')
-      }
-    }).catch(err => {
-      alert(err)
-    })
-    const heroResult = getMaxHero(data)
-    this.props.handleResult(heroResult)
+    // const { target } = e
+    // const fields = QUESTIONS.map(q => (q.key))
+    // const data = {}
+    // const body = {
+    //   // Adding values that we need from form
+    //   email: target.email.value,
+    //   'form-name': target['form-name'].value,
+    //   'bot-field': target['bot-field'].value,
+    // }
+    // fields.forEach(field => {
+    //   const formField = target[field]
+    //   data[field] = formField.value
+    //   if (formField.length > 0) {
+    //     let value
+    //     formField.forEach(f => { if (f.value === formField.value) { value = f.id } })
+    //     body[field] = value
+    //   } else {
+    //     body[field] = formField.value
+    //   }
+    // })
+    //
+    // this.sendFormData(body).then(response => {
+    //   if (response.ok) {
+    //     // const heroResult = getMaxHero(data)
+    //     // this.props.handleResult(heroResult)
+    //   } else {
+    //     alert('An error occured')
+    //   }
+    // }).catch(err => {
+    //   alert(err)
+    // })
+    // const heroResult = getMaxHero(data)
+    // this.props.handleResult(heroResult)
   }
 
   sendFormData = json => {
@@ -72,6 +72,7 @@ export default class SurveyForm extends Component {
         method="post"
         name="hero"
         netlify-honeypot="bot-field"
+        action="/result"
       >
         <h1 className="mb-4">Which Hero Are You?</h1>
         {
