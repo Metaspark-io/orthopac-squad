@@ -20,7 +20,9 @@ export default [
   {
     title: 'The Battle of Proliferating Paperwork!',
     heroImage: sm,
+    heroName: 'Skeletal Man',
     villainImage: rpm,
+    villianName: 'Red Tape Mummy',
     tagline: 'Skeletal Man vs Red Tape Mummy',
     intro: 'At a time when it often feels like paperwork is paramount to patient care, physicians can find themselves spending 50% of their time on paperwork. Blame it on bureaucrats, administrators, lawyers, insurers, coupled with inoperable EHRs (not designed by doctors), along with little clerical support, it all adds to the growing mass of required paperwork. Skeletal Man is here to save the day, selflessly slashing Red Tape and prioritizing patients over paperwork.',
     victories: [
@@ -42,16 +44,14 @@ export default [
           'Unprecedented access and representation at more than 1,200 political events, an increase of more than 25 percent from last election cycle. ',
           'Supporting over 320 candidates and members including 56 females, 44 minorities, and 20 physicians, seeing a win rate of 90 percent in the House and 86 percent in the Senate.',
         ]
-      },
-      {
-        headline: 'Skeletal Man Says:',
-        content: `"What would you rather your orthopedic surgeon do: fill out forms, or heal people?"`,
-      },
+      }
     ]
   },
   {
-    title: 'The Battle of If You Aren’t at the Table, You’re the Main Course',
+    title: 'If You Aren’t at the Table, You’re the Main Course',
     heroImage: ll,
+    heroName: 'Lady Ligament',
+    villianName: 'The Reckless Rubberstamper',
     villainImage: rrs,
     tagline: 'Lady Ligament Vs The Reckless Rubberstamper',
     intro: 'Join everyone’s favorite Flexible Fundraiser on her crusade to stretch OrthoPAC’s reach! As we find the state of health care in uncharted waters, there has never been a more pivotal time for us, as physicians, to be at the helm of the debate. Like it or not, Congress is in our business, looking to dramatically reform our healthcare system, and our adversaries would certainly like to have a say in how we deliver care. Fortunately, Lady Ligament is here to defend our specialty in all political settings! Help her make sure we have a say in how we deliver care — without any reckless rubber-stamping!',
@@ -68,16 +68,14 @@ export default [
         headline: `Increasing our Corporate War Chest and Influence`,
         content: `OrthoPAC amassed 15% growth in just one election cycle! In addition to our exceptional fundraising, our tireless engagement with state and federal lawmakers resulted in a tremendous increase in our political footprint. We are the most active and unified PAC in the entire physician community, with the best participation rate, and are THE largest health care disburser! Additionally, in May of 2016, Lady Ligament created the Advisor’s Circle (AC), our exclusive corporate donor program offering group practices and sub-specialties enhanced legislative and political opportunities. The Circle unites our specialty, while building our corporate dollars. The AC is now 19 members strong, with a 100% retention rate. `,
       },
-      {
-        headline: 'Lady Ligament Says:',
-        content: `“We’re up against well-organized, well-financed opponents in our health care policy battles. That’s why we need you in the OrthoPAC squad!”`,
-      },
     ]
   },
   {
     title: 'The Battle of the Vertical and Horizontal Integration',
     heroImage: aa,
+    heroName: 'Ancillary Annie',
     villainImage: con,
+    villianName: 'The Consolidator',
     tagline: 'Ancillary Annie Vs. The Consolidator',
     intro: 'It’s a showdown at the AAOS corral! After a quarter-century of mega-mergers and large hospital systems using their market power to demand high prices from the privately insured as well as the uninsured, Ancillary Annie has arrived and she’s got The Consolidator dead in her sights! There’s little evidence that hospital mergers lead to higher quality care — especially when they use their market power to demand higher prices. Thank goodness this consolidatin’-hatin’ cowgirl is here to promote choice and competition.',
     victories: [
@@ -93,16 +91,14 @@ export default [
         headline: `Fighting for Physician Owned Hospitals`,
         content: `AAOS helped secure more than 80 cosponsors for the Patient Access to Higher Quality Healthcare Act. The legislation would lift the expansion and new construction restrictions on physician-owned hospitals (POH) that were included in the Affordable Care Act. Additionally, a Senate companion bill was introduced for the first time for which AAOS helped secure more than 10 original cosponsors.`,
       },
-      {
-        headline: 'Ancillary Annie Says:',
-        content: `“We must, in these moments of high political passion, fight for our independence. Who’s with me?”`,
-      },
     ]
   },
   {
     title: 'The Battle of Limited Research Resources',
     heroImage: mm,
+    heroName: 'Mighty Microscope',
     villainImage: tp,
+    villianName: 'The Pretender',
     tagline: 'Mighty Microscope Vs. The Pretender',
     intro: `Just when we need it most, research funding for musculoskeletal health has stagnated. Musculoskeletal disorders and diseases are the leading cause of disability in the United States and account for over half of all chronic conditions in people over 50 years of age in developed countries. In fact, one in two adults reported a chronic musculoskeletal condition in 2011. The Mighty Microscope is our champion, advocating for the funding our specialty — and society! — deserves.`,
     victories: [
@@ -118,16 +114,14 @@ export default [
         headline: `Scope of Practice legislation`,
         content: `The VA MISSION Act became law on June 6, 2018 and included AAOS-supported language that ended the effort to call podiatrists at the VA “physicians” and allow them direct clinical supervision of MD’s and DO’s. The final language only allows podiatrists a raise and access to non-clinical leadership positions. The legislation was the result of months of negotiation between APMA and AAOS, with the full participation and support of AOFAS. The Joint Task Force of Orthopaedic Surgeons and Podiatric Surgeons was created to continue these conversations.`,
       },
-      {
-        headline: 'Mighty Microscope says:',
-        content: `“A society that enjoys better overall health, a stronger workforce, and an enhanced quality of life? Thank Orthopaedic research for that.”`,
-      },
     ]
   },
   {
-    title: 'The Battle of For the Love of Liability Reform',
+    title: 'For the Love of Liability Reform',
     heroImage: rr,
+    heroName: 'Radical Reformer',
     villainImage: ff,
+    villianName: 'Frivolous Fox',
     tagline: 'Radical Reformer Vs. Frivolous Fox',
     intro: `He’s on a mission to improve patient safety and access to care! In a world where 10% of healthcare spending in the United States can be attributed to the cost of litigation and defensive medicine, the Radical Reformer knows where his duties lie: fighting back against the Frivolous Fox. Liability reform reduces defensive medicine practices and results in serious savings in overall health care expenditures.`,
     victories: [
@@ -146,16 +140,14 @@ export default [
         headline: `“Good Samaritan” emerges from committee`,
         content: `The Good Samaritan Health Professionals Act of 2017, which helps protect health care professionals who volunteer their services when a major emergency arises was advanced out of the energy and commerce committee and was included in the Pandemic and All-Hazards Preparedness and Advancing Innovation Act. The AAOS has continually advocated for this legislation and applauded members of Congress for advancing this important measure. Specifically, the bill provided clear liability protections to licensed health care professionals who volunteer health care services to victims during a declared national disaster. Notably, the legislation respects existing medical liability laws and does not protect providers in cases of willful or criminal misconduct, gross negligence, or reckless misconduct.`,
       },
-      {
-        headline: 'Radical Reformer says:',
-        content: `“Did you know that medical liability reform would save the government $62 billion over 10 years? Yep, ‘billion’ with a ‘b.’”`,
-      },
     ]
   },
   {
-    title: 'The Battle of Mission: Permission',
+    title: 'Mission: Permission',
     heroImage: ss,
+    heroName: 'Super Specialty',
     villainImage: bb,
+    villianName: 'Bone Breaker',
     tagline: 'Super Specialty Vs. The Bone Breaker',
     intro: `Prior authorization: the tool of choice for health insurers to deny care? Few issues frustrate physicians more than asking for permission from a patient's insurance company before prescribing medications or performing medical procedures. The time spent by staff members, physicians, and patients on persuading insurance companies is expensive and may detract from patient care. Have no fear, Super Specialty is here — working to reform prior authorization and any barriers patients face when accessing specialty care.`,
     victories: [
@@ -179,10 +171,6 @@ export default [
           `Key patient protections limiting out-of-pocket costs to in-network cost sharing requirements per their existing policy.`,
           `Significantly improved network adequacy requirements`,
         ]
-      },
-      {
-        headline: 'Super Specialty Says:',
-        content: `“Health care policy should empower patients to decide how their health care dollars are spent. Who doesn’t want easier access to specialists, affordable coverage, and better care?”`,
       },
     ]
   }

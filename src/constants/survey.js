@@ -89,7 +89,7 @@ export default [
         value: 'LL',
       },
       {
-        label: 'turning things into chocolate',
+        label: 'Turning things into chocolate',
         value: 'RR',
       },
     ],

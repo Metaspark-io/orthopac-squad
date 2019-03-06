@@ -21,7 +21,7 @@ export default class Issues extends Component {
                     <li>The Battle of the Vertical and Horizontal Integration</li>
                     <li>The Battle of Limited Research Resources</li>
                     <li>For the Love of Liability Reform</li>
-                    <li>May I Have Your Permission Please?</li>
+                    <li>Mission: Permission</li>
                   </ul>
                 </div>
               </div>

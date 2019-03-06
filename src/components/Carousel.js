@@ -45,7 +45,6 @@ export class HeroSlide extends Component {
   render () {
     const {
       name,
-      alterEgo,
       image,
       intro,
       superPower,
@@ -54,6 +53,7 @@ export class HeroSlide extends Component {
       randomFact2,
       duties,
       pacInfo,
+      quote,
       villainName,
       villainIntro,
       villainImage,
@@ -67,9 +67,12 @@ export class HeroSlide extends Component {
               <img src={image} className="img-fluid mr-3" alt={name}/>
             </div>
             <div className="col-12 col-md-8">
-              <small class="text-muted d-block text-uppercase">Hero</small>
+              <small className="text-muted d-block text-uppercase">Hero</small>
               <h2>{name}</h2>
-              {alterEgo && <p>Alter Ego: {alterEgo}</p>}
+              <blockquote className="border-left pl-3 py-2">
+                <p className="h6 mb-1 text"><em>{quote}</em></p>
+                <div className="blockquote-footer"><cite title="Source Title">{name}</cite></div>
+              </blockquote>
               <p>{intro}</p>
               {superPower && <p>Super power: {superPower}</p>}
               {sourceOfPower && <p>Source of Power: {sourceOfPower}</p>}
@@ -79,7 +82,7 @@ export class HeroSlide extends Component {
               {pacInfo && <p>Specific OrthoPAC info: {pacInfo}</p>}
               <div className="row">
                 <div className="col-12 col-md-8">
-                  <small class="text-muted d-block text-uppercase">Arch-Nemesis</small>
+                  <small className="text-muted d-block text-uppercase">Arch-Nemesis</small>
                   <h3>{villainName}</h3>
                   <p>{villainIntro}</p>
                 </div>
