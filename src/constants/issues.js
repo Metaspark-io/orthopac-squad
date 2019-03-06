@@ -18,6 +18,7 @@ import bb from '../images/battle/BoneBreakerBattle-01.png'
 
 export default [
   {
+    issueNumber: 'issue-1',
     title: 'The Battle of Proliferating Paperwork!',
     heroImage: sm,
     heroName: 'Skeletal Man',
@@ -48,6 +49,7 @@ export default [
     ]
   },
   {
+    issueNumber: 'issue-2',
     title: 'If You Aren’t at the Table, You’re the Main Course',
     heroImage: ll,
     heroName: 'Lady Ligament',
@@ -71,6 +73,7 @@ export default [
     ]
   },
   {
+    issueNumber: 'issue-3',
     title: 'The Battle of the Vertical and Horizontal Integration',
     heroImage: aa,
     heroName: 'Ancillary Annie',
@@ -94,6 +97,7 @@ export default [
     ]
   },
   {
+    issueNumber: 'issue-4',
     title: 'The Battle of Limited Research Resources',
     heroImage: mm,
     heroName: 'Mighty Microscope',
@@ -117,6 +121,7 @@ export default [
     ]
   },
   {
+    issueNumber: 'issue-5',
     title: 'For the Love of Liability Reform',
     heroImage: rr,
     heroName: 'Radical Reformer',
@@ -143,6 +148,7 @@ export default [
     ]
   },
   {
+    issueNumber: 'issue-6',
     title: 'Mission: Permission',
     heroImage: ss,
     heroName: 'Super Specialty',
