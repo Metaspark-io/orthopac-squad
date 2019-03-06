@@ -17,7 +17,7 @@ export default class Nav extends Component {
     // Be sure to wrap any of your browser interactions
     // in some sort of node-safe if statement like this:
 
-    if (typeof window !== undefined) {
+    if (typeof window !== 'undefined') {
       // First, are we on the home page?
       // If so, let's scroll to the desired block,
       // which was passed in as an onClick prop on our Link.
@@ -58,7 +58,11 @@ export default class Nav extends Component {
               <span class="d-block"><small>Meet the OrthoPAC Squad!</small></span>
             </MediaQuery>
           </Link>
-          <Link className="nav-item nav-link" activeClassName="active" to="/survey">
+          <Link
+            className="nav-item nav-link"
+            activeClassName="active"
+            to="/survey"
+          >
             <b>Hero Quiz</b>
             <MediaQuery minWidth={navBreak}>
               <span class="d-block"><small>Got a minute? Discover your Ortho hero identity</small></span>

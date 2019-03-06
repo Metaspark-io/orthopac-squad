@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { countBy, includes } from 'lodash'
+import scrollToElement from 'scroll-to-element'
 
 import Question from './Question'
 
@@ -12,7 +13,7 @@ export default class SurveyForm extends Component {
     const { target } = e
     const fields = QUESTIONS.map(q => (q.key))
     const data = {}
-    const body = {
+    const bodyToBeSent = {
       // Adding values that we need from form
       email: target.email.value,
       'form-name': target['form-name'].value,
@@ -24,35 +25,34 @@ export default class SurveyForm extends Component {
       if (formField.length > 0) {
         let value
         formField.forEach(f => { if (f.value === formField.value) { value = f.id } })
-        body[field] = value
+        bodyToBeSent[field] = value
       } else {
-        body[field] = formField.value
+        bodyToBeSent[field] = formField.value
       }
     })
 
-    // this.sendFormData(body).then(response => {
-    //   if (response.ok) {
-    //     const heroResult = getMaxHero(data)
-    //     this.props.handleResult(heroResult)
-    //   } else {
-    //     alert('An error occured')
-    //   }
-    // }).catch(err => {
-    //   alert(err)
-    // })
-    const heroResult = getMaxHero(data)
-    this.props.handleResult(heroResult)
+    this.sendFormData(bodyToBeSent).then(response => {
+      if (response.ok) {
+        const heroResult = getMaxHero(data)
+        this.props.handleResult(heroResult)
+        // Scroll to top of results section
+        scrollToElement('.ribbon')
+      } else {
+        alert('An error occured')
+      }
+    }).catch(err => {
+      alert(err)
+    })
   }
 
   sendFormData = json => {
-    const body = new FormData()
-    Object.keys(json).forEach(k => {
-      body.append(k, json[k])
-    })
+    const body = Object.keys(json)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(json[key]))
+      .join('&')
     return fetch(
-      '/?no-cache=1', // This should prevent it from hitting service worker
+      '/result',
       {
-        method: 'POST',
+        method: 'post',
         body,
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -69,10 +69,10 @@ export default class SurveyForm extends Component {
         className="survey-form"
         onSubmit={this.handleSubmit}
         data-netlify="true"
-        method="POST"
+        method="post"
         name="hero"
         netlify-honeypot="bot-field"
-        netlify="true"
+        action="/result"
       >
         <h1 className="mb-4">Which Hero Are You?</h1>
         {
