@@ -7,7 +7,17 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-
-.play-icon {
-  height: 3rem;
+.play-button {
+  border-radius: 50em;
+  .play-icon {
+    border-radius: 50em;
+    height: 3rem;
+    transition: box-shadow 500ms ease-in;
+  }
+  &:hover {
+    .play-icon{
+      border-radius: 50em;
+      box-shadow: 1px 1px 18px 7px rgba(lighten($secondary, 50%), .8);
+    }
+  }
 }

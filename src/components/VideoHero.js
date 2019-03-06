@@ -24,7 +24,7 @@ export default class VideoHero extends Component {
           <div className="container d-flex flex-column align-items-center justify-content-center h-100">
             <div className="d-flex flex-column justify-content-center">
               <img className="align-self-center img-fluid p-4 mt-4 w-75" src={Title}/>
-              <button className="btn align-self-center">
+              <button className="btn align-self-center play-button">
                 <img className="play-icon" src={Play} alt="Play" onClick={this.toggleOpen}/>
               </button>
             </div>
