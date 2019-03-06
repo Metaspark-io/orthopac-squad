@@ -50,7 +50,7 @@ export default [
     ]
   },
   {
-    title: 'The Battle of If You Aren’t at the Table, You’re the Main Course',
+    title: 'If You Aren’t at the Table, You’re the Main Course',
     heroImage: ll,
     villainImage: rrs,
     tagline: 'Lady Ligament Vs The Reckless Rubberstamper',
@@ -125,7 +125,7 @@ export default [
     ]
   },
   {
-    title: 'The Battle of For the Love of Liability Reform',
+    title: 'For the Love of Liability Reform',
     heroImage: rr,
     villainImage: ff,
     tagline: 'Radical Reformer Vs. Frivolous Fox',
@@ -153,7 +153,7 @@ export default [
     ]
   },
   {
-    title: 'The Battle of Mission: Permission',
+    title: 'Mission: Permission',
     heroImage: ss,
     villainImage: bb,
     tagline: 'Super Specialty Vs. The Bone Breaker',
