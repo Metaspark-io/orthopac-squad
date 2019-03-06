@@ -8,7 +8,7 @@ import HEROES from '../constants/heroes'
 
 export default class SurveyForm extends Component {
   handleSubmit = e => {
-    e.preventDefault()
+    // e.preventDefault()
     const { target } = e
     const fields = QUESTIONS.map(q => (q.key))
     const data = {}
@@ -30,16 +30,16 @@ export default class SurveyForm extends Component {
       }
     })
 
-    // this.sendFormData(body).then(response => {
-    //   if (response.ok) {
-    //     const heroResult = getMaxHero(data)
-    //     this.props.handleResult(heroResult)
-    //   } else {
-    //     alert('An error occured')
-    //   }
-    // }).catch(err => {
-    //   alert(err)
-    // })
+    this.sendFormData(body).then(response => {
+      if (response.ok) {
+        // const heroResult = getMaxHero(data)
+        // this.props.handleResult(heroResult)
+      } else {
+        alert('An error occured')
+      }
+    }).catch(err => {
+      alert(err)
+    })
     const heroResult = getMaxHero(data)
     this.props.handleResult(heroResult)
   }
@@ -69,10 +69,9 @@ export default class SurveyForm extends Component {
         className="survey-form"
         onSubmit={this.handleSubmit}
         data-netlify="true"
-        method="POST"
+        method="post"
         name="hero"
         netlify-honeypot="bot-field"
-        netlify="true"
       >
         <h1 className="mb-4">Which Hero Are You?</h1>
         {
