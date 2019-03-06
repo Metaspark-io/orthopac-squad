@@ -30,7 +30,7 @@ export default class Nav extends Component {
           <a className="nav-item nav-link" href="https://www.aaos.org/Advocacy/PAC/?ssopc=1" target="_blank" rel="noopener noreferrer">
             <b>Join the Squad <MdOpenInNew/></b>
             <MediaQuery minWidth={navBreak}>
-              <span class="d-block"><small>Donate to be a Hero for Medicine</small></span>
+              <span class="d-block"><small>Donate to become a Hero</small></span>
             </MediaQuery>
           </a>
         </nav>
