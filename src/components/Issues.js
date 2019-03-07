@@ -19,7 +19,7 @@ export default class Issues extends Component {
     // Be sure to wrap any of your browser interactions
     // in some sort of node-safe if statement like this:
 
-    if (typeof window !== undefined) {
+    if (typeof window !== 'undefined') {
       // First, are we on the home page?
       // If so, let's scroll to the desired block,
       // which was passed in as an onClick prop on our Link.

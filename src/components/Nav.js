@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import MediaQuery from 'react-responsive'
 import { MdOpenInNew } from 'react-icons/md'
 import scrollToElement from 'scroll-to-element'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 export default class Nav extends Component {
   constructor (props) {
@@ -22,6 +23,10 @@ export default class Nav extends Component {
       // If so, let's scroll to the desired block,
       // which was passed in as an onClick prop on our Link.
       // An event was also passed, we'll preventDefault()
+
+      if (window.ga) {
+        window.ga.send('send', 'event', 'navigate', 'click', target)
+      }
 
       if (window.location.pathname === '/') {
         e.preventDefault()
@@ -45,7 +50,7 @@ export default class Nav extends Component {
           >
             <b>The Issues</b>
             <MediaQuery minWidth={navBreak}>
-              <span class="d-block"><small>Learn about the battles AAOS fights</small></span>
+              <span className="d-block"><small>Learn about the battles AAOS fights</small></span>
             </MediaQuery>
           </Link>
           <Link
@@ -55,7 +60,7 @@ export default class Nav extends Component {
           >
             <b>The Heroes</b>
             <MediaQuery minWidth={navBreak}>
-              <span class="d-block"><small>Meet the OrthoPAC Squad!</small></span>
+              <span className="d-block"><small>Meet the OrthoPAC Squad!</small></span>
             </MediaQuery>
           </Link>
           <Link
@@ -65,15 +70,15 @@ export default class Nav extends Component {
           >
             <b>Hero Quiz</b>
             <MediaQuery minWidth={navBreak}>
-              <span class="d-block"><small>Got a minute? Discover your Ortho hero identity</small></span>
+              <span className="d-block"><small>Got a minute? Discover your Ortho hero identity</small></span>
             </MediaQuery>
           </Link>
-          <a className="nav-item nav-link" href="https://www.aaos.org/Advocacy/PAC/?ssopc=1" target="_blank" rel="noopener noreferrer">
+          <OutboundLink className="nav-item nav-link" href="https://www.aaos.org/Advocacy/PAC/?ssopc=1" target="_blank" rel="noopener noreferrer">
             <b>Join the OrthoPAC Squad <MdOpenInNew/></b>
             <MediaQuery minWidth={navBreak}>
-              <span class="d-block"><small>Donate to become a Hero</small></span>
+              <span className="d-block"><small>Donate to become a Hero</small></span>
             </MediaQuery>
-          </a>
+          </OutboundLink>
         </nav>
       </div>
     )
