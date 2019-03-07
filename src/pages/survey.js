@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import Nav from '../components/Nav'
 import SurveyForm from '../components/SurveyForm'
 import SurveyResults from '../components/SurveyResults'
+import { AskWrapper } from '../components/Ask'
 
 export default class SurveyPage extends Component {
   state = {
@@ -18,23 +19,25 @@ export default class SurveyPage extends Component {
     const { result } = this.state
     return (
       <Layout>
-        <Nav/>
-        <div className="issues-bg">
-          {
-            !result &&
-            <div className="container">
-              <div className="card card-comic my-5">
-                <div className="card-body">
-                  <SurveyForm handleResult={this.handleResult}/>
+        <AskWrapper>
+          <Nav/>
+          <div className="issues-bg">
+            {
+              !result &&
+              <div className="container">
+                <div className="card card-comic my-5">
+                  <div className="card-body">
+                    <SurveyForm handleResult={this.handleResult}/>
+                  </div>
                 </div>
               </div>
-            </div>
-          }
-          {
-            result &&
-            <SurveyResults result={result}/>
-          }
-        </div>
+            }
+            {
+              result &&
+              <SurveyResults result={result}/>
+            }
+          </div>
+        </AskWrapper>
       </Layout>
     )
   }
