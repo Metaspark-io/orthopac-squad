@@ -2,3 +2,6 @@
 https://orthopac-squad.com/* https://orthopac-squad.org/:splat 301!
 https://orthopacsquad.com/* https://orthopac-squad.org/:splat 301!
 https://orthopacsquad.org/* https://orthopac-squad.org/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://orthopac-squad.netlify.com/* https://orthopac-squad.org/:splat 301!
