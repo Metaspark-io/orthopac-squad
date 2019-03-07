@@ -12,7 +12,6 @@ if (typeof window !== 'undefined') {
 const flickityOptions = {
   wrapAround: true,
   dragThreshold: 10,
-  imagesLoaded: true,
   reloadOnUpdate: true, // needed so it renders correct out the gate
 }
 
@@ -21,9 +20,11 @@ export default class Carousel extends Component {
     triggerUpdate: false,
   }
   componentDidMount () {
-    setTimeout(() => {
-      this.setState({ triggerUpdate: true })
-    }, 1000)
+    // Super hacky but it will force flickity to resize every two seconds in case images are taking
+    // forever to load
+    setInterval(() => {
+      this.setState({ triggerUpdate: Date.now() })
+    }, 2000)
   }
   render () {
     const { triggerUpdate } = this.state
