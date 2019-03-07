@@ -40,6 +40,12 @@ export class AskWrapper extends Component {
     }
   }
 
+  componentWillUnmount () {
+    if (this.intervalId) {
+      clearInterval(this.intervalId)
+    }
+  }
+
   render () {
     const { totalDonations } = this.state
     return (
