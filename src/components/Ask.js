@@ -100,7 +100,7 @@ export class AskList extends Component {
                               >
                                 Donate to become a Hero
                               </OutboundLink>
-                            </div>a
+                            </div>
                           </div>
                         </div>
                       </div>
