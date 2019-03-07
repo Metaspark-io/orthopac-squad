@@ -1,0 +1,4 @@
+# Redirect domain aliases to primary domain
+https://orthopac-squad.com/* https://orthopac-squad.org/:splat 301!
+https://orthopacsquad.com/* https://orthopac-squad.org/:splat 301!
+https://orthopacsquad.org/* https://orthopac-squad.org/:splat 301!
