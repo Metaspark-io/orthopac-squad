@@ -51,3 +51,14 @@ footer {
     }
   }
 }
+
+.disclaimer {
+  color: darken($white, 10%);
+  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+}
