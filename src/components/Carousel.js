@@ -19,13 +19,20 @@ export default class Carousel extends Component {
   state = {
     triggerUpdate: false,
   }
+  intervalId = null
+
   componentDidMount () {
     // Super hacky but it will force flickity to resize every two seconds in case images are taking
     // forever to load
-    setInterval(() => {
+    this.intervalId = setInterval(() => {
       this.setState({ triggerUpdate: Date.now() })
     }, 2000)
   }
+
+  componentWillUnmount () {
+    clearInterval(this.intervalId)
+  }
+
   render () {
     const { triggerUpdate } = this.state
     return (
