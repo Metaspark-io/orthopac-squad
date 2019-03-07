@@ -15,7 +15,7 @@ export default class VideoHero extends Component {
     const { isOpen } = this.state
     this.setState({ isOpen: !isOpen })
     if (typeof window !== 'undefined' && window.ga) {
-      window.ga.send('send', 'event', 'video', 'play', 'click')
+      window.ga('send', 'event', 'video', 'play', 'click')
     }
   }
 

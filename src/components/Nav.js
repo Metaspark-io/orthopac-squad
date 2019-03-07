@@ -25,7 +25,7 @@ export default class Nav extends Component {
       // An event was also passed, we'll preventDefault()
 
       if (window.ga) {
-        window.ga.send('send', 'event', 'navigate', 'click', target)
+        window.ga('send', 'event', 'navigate', 'click', target)
       }
 
       if (window.location.pathname === '/') {
