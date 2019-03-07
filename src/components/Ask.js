@@ -135,7 +135,7 @@ export class AskThermometer extends Component {
                   <div className="col-12 col-lg-6">
                     <div className="p-relative p-4">
                       <Thermometer
-                        max={2000000}
+                        max={DONORS.goal}
                         size="large"
                         height={400}
                         value={totalDonations}
