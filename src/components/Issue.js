@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Zoom from 'react-reveal/Zoom'
 import { MdExpandMore, MdExpandLess } from 'react-icons/md'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import Section from './Section'
 
@@ -77,7 +78,7 @@ export default class Issue extends Component {
                       {readMoreExpanded ? <span>Read Less<MdExpandLess/></span> : <span>Read More<MdExpandMore/></span>}
                     </button>
                   </div>
-                  <a href="https://www.aaos.org/Advocacy/PAC/?ssopc=1" className="btn btn-lg btn-block btn-primary">Join the fight with {heroName}</a>
+                  <OutboundLink href={`https://www.aaos.org/Advocacy/PAC/?ssopc=1&${ issueNumber }`} className="btn btn-lg btn-block btn-primary">Join the fight with {heroName}</OutboundLink>
                 </div>
               </div>
             </div>

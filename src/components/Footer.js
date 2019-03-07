@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import logo from '../images/aaos-logo-white.svg'
 
@@ -23,65 +24,65 @@ export default class Footer extends Component {
               </div>
               <div className="col-sm-3 col-6">
                 <ul className="list-unstyled link-list">
-                  <li><a href="https://www.aaos.org/about/about/" target="_self">About AAOS</a></li>
-                  <li><a href="https://www.aaos.org/strategicplan/" target="_self">Mission &amp; Vision</a></li>
-                  <li><a href="https://www.aaos.org/ContactUs/" target="_self">Contact Us</a></li>
-                  <li><a href="http://newsroom.aaos.org/" target="_self">Newsroom</a></li>
+                  <li><OutboundLink href="https://www.aaos.org/about/about/" target="_self">About AAOS</OutboundLink></li>
+                  <li><OutboundLink href="https://www.aaos.org/strategicplan/" target="_self">Mission &amp; Vision</OutboundLink></li>
+                  <li><OutboundLink href="https://www.aaos.org/ContactUs/" target="_self">Contact Us</OutboundLink></li>
+                  <li><OutboundLink href="http://newsroom.aaos.org/" target="_self">Newsroom</OutboundLink></li>
                 </ul>
               </div>
               <div className="col-sm-3 col-6">
                 <ul className="list-unstyled link-list">
-                  <li><a href="https://www.aaos.org/privacy.aspx" target="_self">PRIVACY POLICY</a></li>
-                  <li><a href="https://www.aaos.org/uploadedFiles/PreProduction/About/Policies/meetings-anti-harassment-policy-and-procedures-aug-2018.pdf" target="_self">Anti-Harassment Policy</a></li>
-                  <li><a href="https://www.aaos.org/About/Careers/" target="_self">Careers at AAOS</a></li>
-                  <li><a href="http://orthoinfo.org/" target="_self">Patient Education</a></li>
-                  <li><a href="https://www.aaos.org/About/Policies/Policies/" target="_self">AAOS Policies</a></li>
+                  <li><OutboundLink href="https://www.aaos.org/privacy.aspx" target="_self">PRIVACY POLICY</OutboundLink></li>
+                  <li><OutboundLink href="https://www.aaos.org/uploadedFiles/PreProduction/About/Policies/meetings-anti-harassment-policy-and-procedures-aug-2018.pdf" target="_self">Anti-Harassment Policy</OutboundLink></li>
+                  <li><OutboundLink href="https://www.aaos.org/About/Careers/" target="_self">Careers at AAOS</OutboundLink></li>
+                  <li><OutboundLink href="http://orthoinfo.org/" target="_self">Patient Education</OutboundLink></li>
+                  <li><OutboundLink href="https://www.aaos.org/About/Policies/Policies/" target="_self">AAOS Policies</OutboundLink></li>
                 </ul>
               </div>
               <div className="col-sm-3">
                 <ul className="list-inline">
                   <li className="footer-social-icons__title">Members</li>
                   <li className="social-icon">
-                    <a href="https://www.facebook.com/AAOSMembers/" target="_self">
+                    <OutboundLink href="https://www.facebook.com/AAOSMembers/" target="_self">
                       <FaFacebookF/>
-                    </a>
+                    </OutboundLink>
                   </li>
                   <li className="social-icon">
-                    <a href="https://twitter.com/aaosmembers" target="_self">
+                    <OutboundLink href="https://twitter.com/aaosmembers" target="_self">
                       <FaTwitter/>
-                    </a>
+                    </OutboundLink>
                   </li>
                 </ul>
                 <ul className="list-inline">
                   <li className="footer-social-icons__title">public</li>
                   <li className="social-icon">
-                    <a href="http://www.facebook.com/aaos1" target="_self">
+                    <OutboundLink href="http://www.facebook.com/aaos1" target="_self">
                       <FaFacebookF/>
-                    </a>
+                    </OutboundLink>
                   </li>
 
                   <li className="social-icon">
-                    <a href="http://twitter.com/aaos1" target="_self">
+                    <OutboundLink href="http://twitter.com/aaos1" target="_self">
                       <FaTwitter/>
-                    </a>
+                    </OutboundLink>
                   </li>
 
                   <li className="social-icon">
-                    <a href="https://www.youtube.com/user/AmerAcadOrthoSurg" target="_self">
+                    <OutboundLink href="https://www.youtube.com/user/AmerAcadOrthoSurg" target="_self">
                       <FaYoutube/>
-                    </a>
+                    </OutboundLink>
                   </li>
 
                   <li className="social-icon">
-                    <a href="https://www.linkedin.com/company/american-academy-of-orthopaedic-surgeons" target="_self">
+                    <OutboundLink href="https://www.linkedin.com/company/american-academy-of-orthopaedic-surgeons" target="_self">
                       <FaLinkedinIn/>
-                    </a>
+                    </OutboundLink>
                   </li>
 
                   <li className="social-icon">
-                    <a href="https://www.instagram.com/aaos_1/" target="_self">
+                    <OutboundLink href="https://www.instagram.com/aaos_1/" target="_self">
                       <FaInstagram/>
-                    </a>
+                    </OutboundLink>
                   </li>
                 </ul>
               </div>
