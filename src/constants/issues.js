@@ -41,7 +41,7 @@ export default [
       },
       {
         content: [
-          'Winning the Public Affairs Council’s 2019 outstanding PAC Award, reaching the lofty goal of $4 million raised during the 2018 election cycle. ',
+          'Winning the Public Affairs Council’s 2019 Outstanding PAC Award, reaching the lofty goal of $4 million raised during the 2018 election cycle. ',
           'Unprecedented access and representation at more than 1,200 political events, an increase of more than 25 percent from last election cycle. ',
           'Supporting over 320 candidates and members including 56 females, 44 minorities, and 20 physicians, seeing a win rate of 90 percent in the House and 86 percent in the Senate.',
         ]

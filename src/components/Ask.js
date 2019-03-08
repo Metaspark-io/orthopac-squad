@@ -84,8 +84,8 @@ export class AskList extends Component {
                         <div className="d-flex h-100 align-items-center">
                           <div className="mb-4 mb-md-0">
                             <h2>Heroes Wanted!</h2>
-                            <p>Protect the autonomy of orthopeadists and the quality of the care we provide!</p>
-                            <p>When the Orthopaedic PAC squad unites, they send a strong, collective and clear message that we fights to advance our legislative agenda. As the OrthoPAC squad grows, that message resonates louder.</p>
+                            <p>Protect the autonomy of orthopaedists and the quality of the care we provide!</p>
+                            <p>When the Orthopaedic PAC squad unites, they send a strong, collective and clear message that we fight to advance our legislative agenda. As the OrthoPAC squad grows, that message resonates louder.</p>
                             <div className="btn-toolbar mt-4">
                               <OutboundLink
                                 href="https://www.aaos.org/Advocacy/PACBenefits/"
@@ -183,8 +183,8 @@ export class AskThermometer extends Component {
                       <div className="d-flex h-100 align-items-center">
                         <div className="pt-5 pt-md-0">
                           <h2>Heroes Wanted!</h2>
-                          <p>Protect the autonomy of orthopeadists and the quality of the care we provide!</p>
-                          <p>When the Orthopaedic PAC squad unites, they send a strong, collective and clear message that we fights to advance our legislative agenda. As the OrthoPAC squad grows, that message resonates louder.</p>
+                          <p>Protect the autonomy of orthopaedists and the quality of the care we provide!</p>
+                          <p>When the Orthopaedic PAC squad unites, they send a strong, collective and clear message that we fight to advance our legislative agenda. As the OrthoPAC squad grows, that message resonates louder.</p>
                           <div className="btn-toolbar mt-4">
                             <OutboundLink
                               href="https://www.aaos.org/Advocacy/PACBenefits/"
