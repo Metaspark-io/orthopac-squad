@@ -9,8 +9,8 @@ $color-gray-3: #1d1d1d;
 
 $thermometer-bg-color: linear-gradient($color-b, $color-c, $color-a);
 $thermometer-mercury-bg-color: linear-gradient(0deg, $color-a, $color-b);
-$thermometer-statistic-li-light-before: linear-gradient(90deg, rgba($color-black, .2), transparent);
-$thermometer-statistic-li-dark-before: linear-gradient(90deg, rgba($color-white, .2), transparent);
+$thermometer-statistic-li-light-before: linear-gradient(90deg, rgba($color-black, .1), transparent);
+$thermometer-statistic-li-dark-before: linear-gradient(90deg, rgba($color-white, .1), transparent);
 $thermometer-w: 100px;
 $thermometer-small-w: 100px;
 $thermometer-large-w: 100px;
@@ -262,6 +262,7 @@ $border-radius-b: 2px;
 		li {
 			@include absolute-custom(initial, initial, initial, 0);
 			list-style: none;
+	    text-shadow: #fff 0px 0px 2px;
 
 			&:before {
 				@include absolute-custom(initial, initial, -1px, 0);

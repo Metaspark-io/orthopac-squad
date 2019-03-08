@@ -42,14 +42,13 @@ export default class VideoHero extends Component {
           </div>
         </div>
         <ModalVideo
-          channel='youtube'
+          channel='vimeo'
           isOpen={isOpen}
-          youtube={{
-            autoplay: 1,
-            modestbranding: 1,
-            controls: 0,
+          videmo={{
+            color: 'cc1231',
+            autoplay: true,
           }}
-          videoId='rmAT91VZzoI'
+          videoId='322093424'
           onClose={() => this.setState({ isOpen: false })}
         />
       </React.Fragment>

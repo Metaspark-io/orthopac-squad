@@ -14,7 +14,7 @@ export default class Ribbon extends Component {
               <OutboundLink href="https://www.aaos.org/" className="d-flex align-items-center h-100" rel="noopener noreferrer">
                 <img
                   src={aaosLogo}
-                  alt="AAOS: American Academy of Orthopedic Surgeons | American Association of Orthopedic Surgeons"
+                  alt="AAOS: American Academy of Orthopaedic Surgeons | American Association of Orthopaedic Surgeons"
                   className="img-fluid"
                   style={{ maxHeight: 39 }}
                 />

@@ -36,3 +36,7 @@
 .bg-darker{
   background-color: darken($footer-color, 10%);
 }
+
+body {
+  overflow-x: hidden;
+}

@@ -33,15 +33,15 @@ export default [
     readMore: [
       {
         headline: `Burden: Evaluation and Management (E/M) Documentation Changes`,
-        content: `CMS implemented changes to documentation policies to reduce clinician burden, in response to AAOS comments regarding proposed revisions to Evaluation and Management (E/M) Services as part of the Medicare Physician Fee Schedule Final Rule. This will preserve the current coding for complex patients, delaying collapse of E/M codes 99201-99215 to the year 2021. AAOS continues to be involved in discussions regarding proposed changes to the to the coding and payment system through the AMA’s CPT/RUC Workgroup on E/M.`,
+        content: `CMS implemented changes to documentation policies to reduce clinician burden, in response to AAOS comments regarding proposed revisions to Evaluation and Management (E/M) Services as part of the Medicare Physician Fee Schedule Final Rule. This will preserve the current coding for complex patients, delaying collapse of E/M codes 99201-99215 until the year 2021. AAOS continues to be involved in discussions regarding proposed changes to the to the coding and payment system through the AMA’s CPT/RUC Workgroup on E/M.`,
       },
       {
         headline: `Access: OrthoPAC Hits $4M Raised.`,
-        content: `2018 was an historic year for the Orthopaedic Political Action Committee (PAC). Record-breaking resident involvement was rewarded with multiple successes:`,
+        content: `2018 was an historic year for the Orthopaedic Political Action Committee (PAC). Record-breaking member involvement was rewarded with multiple successes:`,
       },
       {
         content: [
-          'Winning the Public Affairs Council’s 2018 outstanding PAC Award, reaching the lofty goal of $4 million raised during the 2018 election cycle. ',
+          'Winning the Public Affairs Council’s 2019 Outstanding PAC Award, reaching the lofty goal of $4 million raised during the 2018 election cycle. ',
           'Unprecedented access and representation at more than 1,200 political events, an increase of more than 25 percent from last election cycle. ',
           'Supporting over 320 candidates and members including 56 females, 44 minorities, and 20 physicians, seeing a win rate of 90 percent in the House and 86 percent in the Senate.',
         ]
@@ -56,6 +56,7 @@ export default [
     villianName: 'The Reckless Rubberstamper',
     villainImage: rrs,
     tagline: 'Lady Ligament Vs The Reckless Rubberstamper',
+    link: 'https://www.aaos.org/advocacy/pac/advisorscircle/?ssopc=1',
     intro: 'Join everyone’s favorite Flexible Fundraiser on her crusade to stretch OrthoPAC’s reach! As we find the state of health care in uncharted waters, there has never been a more pivotal time for us, as physicians, to be at the helm of the debate. Like it or not, Congress is in our business, looking to dramatically reform our healthcare system, and our adversaries would certainly like to have a say in how we deliver care. Fortunately, Lady Ligament is here to defend our specialty in all political settings! Help her make sure we have a say in how we deliver care — without any reckless rubber-stamping!',
     victories: [
       'IPAB repealed',
@@ -63,8 +64,8 @@ export default [
     ],
     readMore: [
       {
-        headline: `Repeal the IPAB`,
-        content: `Of AAOS’s many wins in the 115th legislative session, none are more notable than the repeal of the independent payment advisory board (IPAB). Repealing this board — which was charged with making recommendations to cut Medicare expenditures if spending growth reached a certain level — has remained a top priority for AAOS over the years. Hundreds of orthopaedic surgeons visited Capitol Hill and/or talked to their elected representatives about this issue, and our legislative and political OGR team educated and whipped support for repeal over an eight-year course. It was a hot topic at the National Orthopaedic Leadership Conference (NOLC) as well as the subject of grassroots efforts that many of you supported. IPAB repeal is a shining example of what we can do when we bring our advocacy efforts together.`,
+        headline: `Repeal of the IPAB`,
+        content: `Of AAOS’s many wins in the 115th legislative session, none are more notable than the repeal of the independent payment advisory board (IPAB). Repealing this board — which was charged with making recommendations to cut Medicare expenditures if spending growth reached a certain level — has remained a top priority for AAOS over the years. Hundreds of orthopaedic surgeons visited Capitol Hill and/or talked to their elected representatives about this issue, and our legislative and political team educated and whipped support for repeal over an eight-year course. It was a hot topic at the National Orthopaedic Leadership Conference (NOLC) as well as the subject of grassroots efforts that many of you supported. IPAB repeal is a shining example of what we can do when we bring our advocacy efforts together.`,
       },
       {
         headline: `Increasing our Corporate War Chest and Influence`,
@@ -80,7 +81,7 @@ export default [
     villainImage: con,
     villianName: 'The Consolidator',
     tagline: 'Ancillary Annie Vs. The Consolidator',
-    intro: 'It’s a showdown at the AAOS corral! After a quarter-century of mega-mergers and large hospital systems using their market power to demand high prices from the privately insured as well as the uninsured, Ancillary Annie has arrived and she’s got The Consolidator dead in her sights! There’s little evidence that hospital mergers lead to higher quality care — especially when they use their market power to demand higher prices. Thank goodness this consolidatin’-hatin’ cowgirl is here to promote choice and competition.',
+    intro: 'It’s a showdown at the AAOS corral! After a quarter-century of mega-mergers and large hospital systems using their market power to demand high prices from the privately insured as well as the uninsured, Ancillary Annie has arrived and she’s got the Consolidator dead in her sights! There’s little evidence that hospital mergers lead to higher quality care — especially when they use their market power to demand higher prices. Thank goodness this consolidatin’-hatin’ cowgirl is here to promote choice and competition.',
     victories: [
       'Site Neutral in Outpatient Final Rule 2019',
       'Fighting for Physician Owned Hospitals',
@@ -136,7 +137,7 @@ export default [
     readMore: [
       {
         headline: `Sports Medicine Licensure Clarity Act Becomes Law!`,
-        content: `The Sports Medicine Licensure Clarity Act (H.R.302), was signed into law on Oct. 5, 2018, after more than five years of tireless advocacy. The legislation originated from AAOS and provides legal protection for traveling team physicians. It also safeguards injured athletes’ timely access to health care professionals who best know their medical histories.`,
+        content: `The Sports Medicine Licensure Clarity Act (H.R.302) was signed into law on Oct. 5, 2018, after more than five years of tireless advocacy. The legislation originated from AAOS and provides legal protection for traveling team physicians. It also safeguards injured athletes’ timely access to health care professionals who best know their medical histories.`,
       },
       {
         content: `Specifically, the law mandates that liability insurance of a medical professional treating their team in a secondary state should cover that person (subject to premium adjustments) as if treatment was provided in the primary state. Additionally, if two states do not currently have an agreement to provide licensure reciprocity, the provider is to be treated as if they’re practicing in the state in which they’re licensed.`
