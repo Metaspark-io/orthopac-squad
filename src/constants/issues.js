@@ -56,6 +56,7 @@ export default [
     villianName: 'The Reckless Rubberstamper',
     villainImage: rrs,
     tagline: 'Lady Ligament Vs The Reckless Rubberstamper',
+    link: 'https://www.aaos.org/advocacy/pac/advisorscircle/?ssopc=1',
     intro: 'Join everyone’s favorite Flexible Fundraiser on her crusade to stretch OrthoPAC’s reach! As we find the state of health care in uncharted waters, there has never been a more pivotal time for us, as physicians, to be at the helm of the debate. Like it or not, Congress is in our business, looking to dramatically reform our healthcare system, and our adversaries would certainly like to have a say in how we deliver care. Fortunately, Lady Ligament is here to defend our specialty in all political settings! Help her make sure we have a say in how we deliver care — without any reckless rubber-stamping!',
     victories: [
       'IPAB repealed',

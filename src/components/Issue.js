@@ -19,6 +19,7 @@ export default class Issue extends Component {
     const {
       issueNumber,
       title,
+      link,
       heroImage,
       heroName,
       villainImage,
@@ -31,6 +32,7 @@ export default class Issue extends Component {
     const {
       readMoreExpanded
     } = this.state
+    const buttonLink = link ? `${link}&${ issueNumber }` : `https://www.aaos.org/Advocacy/PAC/?ssopc=1&${ issueNumber }`
     return (
       <div className="issue" id={issueNumber}>
         <div className="col-12">
@@ -78,7 +80,7 @@ export default class Issue extends Component {
                       {readMoreExpanded ? <span>Read Less<MdExpandLess/></span> : <span>Read More<MdExpandMore/></span>}
                     </button>
                   </div>
-                  <OutboundLink href={`https://www.aaos.org/Advocacy/PAC/?ssopc=1&${ issueNumber }`} className="btn btn-lg btn-block btn-primary">Learn more about {heroName}'s fight</OutboundLink>
+                  <OutboundLink href={buttonLink} className="btn btn-lg btn-block btn-primary">Learn more about {heroName}'s fight</OutboundLink>
                 </div>
               </div>
             </div>
