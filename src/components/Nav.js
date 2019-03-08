@@ -76,7 +76,7 @@ export default class Nav extends Component {
           <OutboundLink className="nav-item nav-link" href="https://www.aaos.org/Advocacy/PAC/?ssopc=1" target="_blank" rel="noopener noreferrer">
             <b>AAOS Orthopaedic PAC Home Page <MdOpenInNew/></b>
             <MediaQuery minWidth={navBreak}>
-              <span className="d-none"><small>OrthoPac Home Page</small></span>
+              <span className="d-block"><small>Learn more about OrthoPAC</small></span>
             </MediaQuery>
           </OutboundLink>
         </nav>
