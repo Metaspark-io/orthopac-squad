@@ -44,7 +44,7 @@ export default class Issues extends Component {
               <div className="card card-comic issues-card">
                 <div className="card-body">
                   <h2 className="text-center">The Issues</h2>
-                  <p>The American Association of Orthopaedic Surgeons (AAOS) tracks and addresses issues that threaten the ability of orthopedists to provide the highest possible quality of care. Aiding them in their fight is the mighty OrthoPAC Squad: an elite team of heroes dedicated to protecting every orthopedist and their patients. You can bone up on those battles here.</p>
+                  <p>The American Association of Orthopaedic Surgeons (AAOS) tracks and addresses issues that threaten the ability of orthopaedists to provide the highest possible quality of care. Aiding them in their fight is the mighty OrthoPAC Squad: an elite team of heroes dedicated to protecting every orthopaedist and their patients. You can bone up on those battles here.</p>
                   <ul>
                     <li>
                       <Link
