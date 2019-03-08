@@ -36,7 +36,7 @@ export default {
     superPower: 'Elasticity',
     motivations: 'Lady Ligament lives to grow our PAC presence.',
     randomFact: 'She runs our Advisor\'s Circle program, now 19 groups strong!',
-    duties: ' This fundraising fem-nomenon functions on the federal and state level, enabling our PAC to participate in governors and state political committees, as well as helping elect officials through independent expenditures.',
+    duties: ' This fundraising fem-nomenon functions on the federal and state level, enabling our PAC to participate in governors\' and state political committees, as well as helping elect officials through independent expenditures.',
     quote: `“We’re up against well-organized, well-financed opponents in our health care policy battles. That’s why we need you in the OrthoPAC squad!”`,
     villainName: 'Reckless Rubberstamper ',
     villainIntro: 'This aggressive authorizer is mis-guided, mis-informed and malevolent. His rampant rubber-stamping results far too often in the passing of fatally flawed laws.',
