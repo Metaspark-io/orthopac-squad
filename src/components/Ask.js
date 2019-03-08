@@ -6,7 +6,7 @@ import Thermometer from './Thermometer'
 
 import DONORS, { getTotalDonations } from '../constants/donors'
 
-import ll from '../images/ll-transparent.png'
+import heroes from '../images/ll-transparent.png'
 
 const TOTAL_DONATIONS = getTotalDonations()
 
@@ -83,11 +83,12 @@ export class AskList extends Component {
                       <div className="col-12 col-md-6">
                         <div className="d-flex h-100 align-items-center">
                           <div className="mb-4 mb-md-0">
-                            <h2>The Squad needs you</h2>
-                            <p>Heroes wanted! Your OrthoPAC membership and donations help ensure our profession a powerful voice in government. Protect the autonomy of orthopeadists and the quality of the care we provide!</p>
+                            <h2>Heroes Wanted!</h2>
+                            <p>Protect the autonomy of orthopeadists and the quality of the care we provide!</p>
+                            <p>When the Orthopaedic PAC squad unites, they send a strong, collective and clear message that we fights to advance our legislative agenda. As the OrthoPAC squad grows, that message resonates louder.</p>
                             <div className="btn-toolbar">
                               <OutboundLink
-                                href="https://sso.aaos.org/login.aspx?vi=8&vt=77dc2d42411a9e98420dd4aaa5809106ee3572701588e5e6ee0c58f79c1d6ca84d304858ffc57b32d68b99ef404de6c6d5f0081e337c3594184003d8545161658382b3e80ad4a05a3907d076217b4ac42967966f94bda931557ebc73b9c211e4384993a31b7cdbd482b74314e270da05c29829fccad3fdd505f9d189bd304aad07cad1d45d7aab1734025ec7db4eb3ad5ac98358e895b25d09bc4b7ccdeca5f50993d7fe12cd216914078a761e6e8806ddd1cad026278ce5fc71b2d1eb5c4a11"
+                                href="https://www.aaos.org/Advocacy/PACBenefits/"
                                 className="btn btn-primary btn-lg mr-2 mb-2"
                                 rel="noopener noreferrer"
                               >
@@ -106,7 +107,7 @@ export class AskList extends Component {
                       </div>
                       <div className="col-12 col-md-6">
                         <h3 className="h4">We have raised: ${totalDonations.toLocaleString()}!</h3>
-                        <p>A big thanks to our 5k members:</p>
+                        <p>A big thanks to our $5K Max-Out Donors:</p>
                         <ul>
                           {
                             DONORS.fiveK.map((donor, i) => (
@@ -175,14 +176,15 @@ export class AskThermometer extends Component {
                           height={400}
                           value={totalDonations}
                         />
-                        <img className="therm-illustration" src={ll} alt="Lady Ligament"/>
+                        <img className="therm-illustration" src={heroes} alt="Skeletal Man and Lady Ligament"/>
                       </div>
                     </div>
                     <div className="col-12 col-lg-6">
                       <div className="d-flex h-100 align-items-center">
                         <div className="pt-5 pt-md-0">
-                          <h2>The Squad needs you</h2>
-                          <p>Heroes wanted! Your OrthoPAC membership and donations help ensure our profession a powerful voice in government. Protect the autonomy of orthopeadists and the quality of the care we provide!</p>
+                          <h2>Heroes Wanted!</h2>
+                          <p>Protect the autonomy of orthopeadists and the quality of the care we provide!</p>
+                          <p>When the Orthopaedic PAC squad unites, they send a strong, collective and clear message that we fights to advance our legislative agenda. As the OrthoPAC squad grows, that message resonates louder.</p>
                           <div className="btn-toolbar">
                             <OutboundLink
                               href="https://sso.aaos.org/login.aspx?vi=8&vt=77dc2d42411a9e98420dd4aaa5809106ee3572701588e5e6ee0c58f79c1d6ca84d304858ffc57b32d68b99ef404de6c6d5f0081e337c3594184003d8545161658382b3e80ad4a05a3907d076217b4ac42967966f94bda931557ebc73b9c211e4384993a31b7cdbd482b74314e270da05c29829fccad3fdd505f9d189bd304aad07cad1d45d7aab1734025ec7db4eb3ad5ac98358e895b25d09bc4b7ccdeca5f50993d7fe12cd216914078a761e6e8806ddd1cad026278ce5fc71b2d1eb5c4a11" className="btn btn-primary btn-lg mr-2 mb-2" rel="noopener noreferrer">Join the OrthoPac Squad</OutboundLink>

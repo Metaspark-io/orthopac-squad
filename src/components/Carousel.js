@@ -87,7 +87,7 @@ export class HeroSlide extends Component {
               {randomFact && <p>Random Fact: {randomFact}</p>}
               {randomFact2 && <p>Random Fact 2: {randomFact2}</p>}
               {duties && <p>Duties: {duties}</p>}
-              {pacInfo && <p>Specific OrthoPAC info: {pacInfo}</p>}
+              {pacInfo && <p>OrthoPAC Advocacy Specifics: {pacInfo}</p>}
               <div className="row">
                 <div className="col-12 col-md-8">
                   <small className="text-muted d-block text-uppercase">Arch-Nemesis</small>

@@ -78,7 +78,7 @@ export default class Issue extends Component {
                       {readMoreExpanded ? <span>Read Less<MdExpandLess/></span> : <span>Read More<MdExpandMore/></span>}
                     </button>
                   </div>
-                  <OutboundLink href={`https://www.aaos.org/Advocacy/PAC/?ssopc=1&${ issueNumber }`} className="btn btn-lg btn-block btn-primary">Join the fight with {heroName}</OutboundLink>
+                  <OutboundLink href={`https://www.aaos.org/Advocacy/PAC/?ssopc=1&${ issueNumber }`} className="btn btn-lg btn-block btn-primary">Learn more about {heroName}'s fight</OutboundLink>
                 </div>
               </div>
             </div>
