@@ -2,7 +2,7 @@ $animation-speed: .3s;
 $animation-function: ease-out;
 $backdrop-color: rgba(0, 0, 0, .5);
 
-@keyframes modal-video {
+@keyframes video-modal {
 	from {
 		opacity: 0;
 	}
@@ -12,7 +12,7 @@ $backdrop-color: rgba(0, 0, 0, .5);
 	}
 }
 
-@keyframes modal-video-inner {
+@keyframes video-modal-inner {
 	from {
 		transform: translate(0, 100px);
 	}
@@ -22,7 +22,7 @@ $backdrop-color: rgba(0, 0, 0, .5);
 	}
 }
 
-.modal-video {
+.video-modal {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -34,7 +34,7 @@ $backdrop-color: rgba(0, 0, 0, .5);
 	opacity: 1;
 	animation-timing-function: $animation-function;
 	animation-duration: $animation-speed;
-	animation-name: modal-video;
+	animation-name: video-modal;
 	-webkit-transition: opacity $animation-speed $animation-function;
 	-moz-transition: opacity $animation-speed $animation-function;
 	-ms-transition: opacity $animation-speed $animation-function;
@@ -42,10 +42,10 @@ $backdrop-color: rgba(0, 0, 0, .5);
 	transition: opacity $animation-speed $animation-function;
 }
 
-.modal-video-effect-exit {
+.video-modal-effect-exit {
 	opacity: 0;
 
-	& .modal-video-movie-wrap {
+	& .video-modal-movie-wrap {
 		-webkit-transform: translate(0, 100px);
 		-moz-transform: translate(0, 100px);
 		-ms-transform: translate(0, 100px);
@@ -54,7 +54,7 @@ $backdrop-color: rgba(0, 0, 0, .5);
 	}
 }
 
-.modal-video-body {
+.video-modal-body {
 	max-width: 940px;
 	width: 100%;
 	height: 100%;
@@ -62,14 +62,14 @@ $backdrop-color: rgba(0, 0, 0, .5);
 	display: table;
 }
 
-.modal-video-inner {
+.video-modal-inner {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
 	height: 100%;
 }
 
-.modal-video-movie-wrap {
+.video-modal-movie-wrap {
 	width: 100%;
 	height: 0;
 	position: relative;
@@ -77,7 +77,7 @@ $backdrop-color: rgba(0, 0, 0, .5);
 	background-color: #333;
 	animation-timing-function: $animation-function;
 	animation-duration: $animation-speed;
-	animation-name: modal-video-inner;
+	animation-name: video-modal-inner;
 	-webkit-transform: translate(0, 0);
 	-moz-transform: translate(0, 0);
 	-ms-transform: translate(0, 0);
@@ -98,7 +98,7 @@ $backdrop-color: rgba(0, 0, 0, .5);
 	}
 }
 
-.modal-video-close-btn {
+.video-modal-close-btn {
 	position: absolute;
 	z-index: 2;
 	top: -35px;

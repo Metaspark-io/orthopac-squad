@@ -1,23 +1,19 @@
 import React from 'react'
 import CSSTransition from 'react-transition-group/CSSTransition'
+import Vimeo from 'react-vimeo'
 
-import './YoutubeModal.scss'
+import './VideoModal.scss'
 
-export default class ModalVideo extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      isOpen: false
-    }
-    this.closeModal = this.closeModal.bind(this)
-    this.updateFocus = this.updateFocus.bind(this)
+export default class VideoModal extends React.Component {
+  state = {
+    isOpen: false
   }
 
   openModal () {
     this.setState({ isOpen: true })
   }
 
-  closeModal () {
+  closeModal = () => {
     this.setState({ isOpen: false })
     if (typeof this.props.onClose === 'function') {
       this.props.onClose()
@@ -48,7 +44,7 @@ export default class ModalVideo extends React.Component {
     }
   }
 
-  updateFocus (e) {
+  updateFocus = e => {
     if (e.keyCode === 9) {
       e.preventDefault()
       e.stopPropagation()
@@ -57,43 +53,6 @@ export default class ModalVideo extends React.Component {
       } else {
         this.modal.focus()
       }
-    }
-  }
-
-  getQueryString (obj) {
-    let url = ''
-    for (let key in obj) {
-      if (obj.hasOwnProperty(key)) {
-        if (obj[key] !== null) {
-          url += key + '=' + obj[key] + '&'
-        }
-      }
-    }
-    return url.substr(0, url.length - 1)
-  }
-
-  getYoutubeUrl (youtube, videoId) {
-    const query = this.getQueryString(youtube)
-    return '//www.youtube.com/embed/' + videoId + '?' + query
-  }
-
-  getVimeoUrl (vimeo, videoId) {
-    const query = this.getQueryString(vimeo)
-    return '//player.vimeo.com/video/' + videoId + '?' + query
-  }
-
-  getYoukuUrl (youku, videoId) {
-    const query = this.getQueryString(youku)
-    return '//player.youku.com/embed/' + videoId + '?' + query
-  }
-
-  getVideoUrl (opt, videoId) {
-    if (opt.channel === 'youtube') {
-      return this.getYoutubeUrl(opt.youtube, videoId)
-    } else if (opt.channel === 'vimeo') {
-      return this.getVimeoUrl(opt.vimeo, videoId)
-    } else if (opt.channel === 'youku') {
-      return this.getYoukuUrl(opt.youku, videoId)
     }
   }
 
@@ -127,15 +86,7 @@ export default class ModalVideo extends React.Component {
                 <div className={this.props.classNames.modalVideoInner}>
                   <div className={this.props.classNames.modalVideoIframeWrap} style={style}>
                     <button className={this.props.classNames.modalVideoCloseBtn} aria-label={this.props.aria.dismissBtnMessage} ref={node => { this.modalbtn = node }} onKeyDown={this.updateFocus} />
-                    <iframe
-                      width='460'
-                      height='230'
-                      src={this.getVideoUrl(this.props, this.props.videoId)}
-                      frameBorder='0'
-                      allowFullScreen={this.props.allowFullScreen}
-                      tabIndex='-1'
-                      allow="autoplay"
-                    />
+                    <Vimeo videoId={this.props.videoId} onEnded={this.props.onEnded} {...this.props.vimeo}/>
                   </div>
                 </div>
               </div>
@@ -146,36 +97,12 @@ export default class ModalVideo extends React.Component {
   }
 }
 
-ModalVideo.defaultProps = {
-  channel: 'youtube',
+VideoModal.defaultProps = {
+  channel: 'vimeo',
   isOpen: false,
-  youtube: {
-    autoplay: 1,
-    cc_load_policy: 1,
-    color: null,
-    controls: 1,
-    disablekb: 0,
-    enablejsapi: 0,
-    end: null,
-    fs: 1,
-    h1: null,
-    iv_load_policy: 1,
-    list: null,
-    listType: null,
-    loop: 0,
-    modestbranding: null,
-    origin: null,
-    playlist: null,
-    playsinline: null,
-    rel: 0,
-    showinfo: 1,
-    start: 0,
-    wmode: 'transparent',
-    theme: 'dark'
-  },
   ratio: '16:9',
   vimeo: {
-    api: false,
+    api: true,
     autopause: true,
     autoplay: true,
     byline: true,
@@ -191,20 +118,16 @@ ModalVideo.defaultProps = {
     width: null,
     xhtml: false
   },
-  youku: {
-    autoplay: 1,
-    show_related: 0
-  },
   allowFullScreen: true,
   animationSpeed: 300,
   classNames: {
-    modalVideoEffect: 'modal-video-effect',
-    modalVideo: 'modal-video',
-    modalVideoClose: 'modal-video-close',
-    modalVideoBody: 'modal-video-body',
-    modalVideoInner: 'modal-video-inner',
-    modalVideoIframeWrap: 'modal-video-movie-wrap',
-    modalVideoCloseBtn: 'modal-video-close-btn'
+    modalVideoEffect: 'video-modal-effect',
+    modalVideo: 'video-modal',
+    modalVideoClose: 'video-modal-close',
+    modalVideoBody: 'video-modal-body',
+    modalVideoInner: 'video-modal-inner',
+    modalVideoIframeWrap: 'video-modal-movie-wrap',
+    modalVideoCloseBtn: 'video-modal-close-btn'
   },
   aria: {
     openMessage: 'You just openned the modal video',

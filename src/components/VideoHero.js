@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ModalVideo from './YoutubeModal'
+import VideoModal from './VideoModal'
 
 import Title from '../images/videoHero/title.png'
 import Left from '../images/videoHero/heroes-left.svg'
@@ -41,15 +41,16 @@ export default class VideoHero extends Component {
             </div>
           </div>
         </div>
-        <ModalVideo
+        <VideoModal
           channel='vimeo'
           isOpen={isOpen}
-          videmo={{
-            color: 'cc1231',
+          vimeo={{
             autoplay: true,
+            api: true,
           }}
           videoId='322093424'
           onClose={() => this.setState({ isOpen: false })}
+          onEnded={() => this.setState({ isOpen: false })}
         />
       </React.Fragment>
     )
