@@ -6,7 +6,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
+
+  .tagline {
+    bottom: 0%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -100%);
+    width: 75%;
+  }
 }
+
 .play-button {
   border-radius: 50em;
   .play-icon {
