@@ -118,9 +118,6 @@ export class AskList extends Component {
                         <p>And our other donors:</p>
                         <ul className="nav nav-fill">
                           <li className="nav-item">
-                            <a className="nav-link active" href="/5K-Capitol-Club.pdf" target="_blank" rel="noopener noreferrer">$5K Capitol Club</a>
-                          </li>
-                          <li className="nav-item">
                             <a className="nav-link active" href="/3K-Capitol-Club.pdf" target="_blank" rel="noopener noreferrer">$3K Capitol Club</a>
                           </li>
                           <li className="nav-item">
