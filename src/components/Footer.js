@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
-import logo from '../images/aaos-logo-white.svg'
+import logo from '../images/aaosFooterLogo.svg'
 
 export default class Footer extends Component {
   render () {
@@ -12,13 +12,13 @@ export default class Footer extends Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-3">
-                <img className="w-50 mb-3" src={logo}/>
+                <img className="w-75 mb-3" src={logo} alt="AAOS: American Association of Orthopaedic Surgeons"/>
                 <div className="vcard">
                   <p>
-                    <span className="street-address">9400 West Higgins Road</span>
-                    <br/><span className="region">Rosemont, Illinois</span> <span className="postal-code">60018</span>
-                    <br/><span>Phone: </span><span className="tel">847.823.7186</span>
-                    <br/><span>Fax: </span><span>847.823.8125</span>
+                    <span className="street-address">317 Massachusetts Avenue NE, Suite 100</span>
+                    <br/><span className="region">Washington, D.C.</span> <span className="postal-code">20002</span>
+                    <br/><span>Phone: </span><a href="tel:+01-202-546-4430" className="tel text-white">202.546.4430</a>
+                    <br/><span>Fax: </span><a href="tel:+01-202-546-5051" className="text-white">202.546.5051</a>
                   </p>
                 </div>
               </div>
@@ -88,7 +88,7 @@ export default class Footer extends Component {
               </div>
             </div>
             <small className="text-center d-flex pt-5 pb-3">
-              © 1995-{new Date().getFullYear()} by the American Academy of Orthopaedic Surgeons. "All Rights Reserved." This website and its contents may not be reproduced in whole or in part without written permission. "American Academy of Orthopaedic Surgeons" and its associated seal and "American Association of Orthopaedic Surgeons" and its logo are all registered U.S. trademarks and may not be used without written permission.
+              © 1995-{new Date().getFullYear()} by the American Association of Orthopaedic Surgeons. "All Rights Reserved." This website and its contents may not be reproduced in whole or in part without written permission. "American Association of Orthopaedic Surgeons" and its associated seal and "American Association of Orthopaedic Surgeons" and its logo are all registered U.S. trademarks and may not be used without written permission.
             </small>
           </div>
         </footer>
