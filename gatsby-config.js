@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'OrthoPAC Sqaud',
+    title: 'OrthoPAC Squad',
     author: 'AAOS',
     imageUrl: 'https://i.imgur.com/WMHXT1j.png',
-    description: 'OrthoPAC Sqaud: Heroes of the AAOS OrthoPAC',
+    description: 'OrthoPAC Squad: Heroes of the AAOS OrthoPAC',
     keywords: `AAOS, OrthoPAC, PAC, orthopaedic, Doctor, surgeon, donate, join`,
     siteUrl: `https://orthopac-squad.org`
   },
