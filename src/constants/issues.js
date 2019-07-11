@@ -25,6 +25,7 @@ export default [
     villainImage: rpm,
     villianName: 'Red Tape Mummy',
     tagline: 'Skeletal Man vs Red Tape Mummy',
+    link: 'https://www.aaos.org/Advocacy/FederalLegWins/',
     intro: 'At a time when it often feels like paperwork is paramount to patient care, physicians can find themselves spending 50% of their time on paperwork. Blame it on bureaucrats, administrators, lawyers, insurers, coupled with inoperable EHRs (not designed by doctors), along with little clerical support, it all adds to the growing mass of required paperwork. Skeletal Man is here to save the day, selflessly slashing Red Tape and prioritizing patients over paperwork.',
     victories: [
       'E/M Documentation Changes',
@@ -81,6 +82,7 @@ export default [
     villainImage: con,
     villianName: 'The Consolidator',
     tagline: 'Ancillary Annie Vs. The Consolidator',
+    link: 'https://www.aaos.org/Advocacy/IOAS/',
     intro: 'It’s a showdown at the AAOS corral! After a quarter-century of mega-mergers and large hospital systems using their market power to demand high prices from the privately insured as well as the uninsured, Ancillary Annie has arrived and she’s got the Consolidator dead in her sights! There’s little evidence that hospital mergers lead to higher quality care — especially when they use their market power to demand higher prices. Thank goodness this consolidatin’-hatin’ cowgirl is here to promote choice and competition.',
     victories: [
       'Site Neutral in Outpatient Final Rule 2019',
@@ -105,6 +107,7 @@ export default [
     villainImage: tp,
     villianName: 'The Pretender',
     tagline: 'Mighty Microscope Vs. The Pretender',
+    link: 'https://www.aaos.org/Advocacy/ResearchAppropriations/',
     intro: `Just when we need it most, research funding for musculoskeletal health has stagnated. Musculoskeletal disorders and diseases are the leading cause of disability in the United States and account for over half of all chronic conditions in people over 50 years of age in developed countries. In fact, one in two adults reported a chronic musculoskeletal condition in 2011. The Mighty Microscope is our champion, advocating for the funding our specialty — and society! — deserves.`,
     victories: [
       'PRORP funding triumphs',
@@ -129,6 +132,7 @@ export default [
     villainImage: ff,
     villianName: 'Frivolous Fox',
     tagline: 'Radical Reformer Vs. Frivolous Fox',
+    link: 'https://www.aaos.org/Advocacy/MLR/',
     intro: `He’s on a mission to improve patient safety and access to care! In a world where 10% of healthcare spending in the United States can be attributed to the cost of litigation and defensive medicine, the Radical Reformer knows where his duties lie: fighting back against the Frivolous Fox. Liability reform reduces defensive medicine practices and results in serious savings in overall health care expenditures.`,
     victories: [
       'Sports Medicine Licensure Clarity Act Becomes Law!',
@@ -156,6 +160,7 @@ export default [
     villainImage: bb,
     villianName: 'Bone Breaker',
     tagline: 'Super Specialty Vs. The Bone Breaker',
+    link: 'https://www.aaos.org/Advocacy/PrivatePayment/',
     intro: `Prior authorization: the tool of choice for health insurers to deny care? Few issues frustrate physicians more than asking for permission from a patient's insurance company before prescribing medications or performing medical procedures. The time spent by staff members, physicians, and patients on persuading insurance companies is expensive and may detract from patient care. Have no fear, Super Specialty is here — working to reform prior authorization and any barriers patients face when accessing specialty care.`,
     victories: [
       'Insurance reforms',

@@ -32,7 +32,7 @@ export default class Issue extends Component {
     const {
       readMoreExpanded
     } = this.state
-    const buttonLink = link ? `${link}&${ issueNumber }` : `https://www.aaos.org/Advocacy/PAC/?ssopc=1&${ issueNumber }`
+    const buttonLink = link ? `${ link }` : `https://www.aaos.org/Advocacy/PAC/?ssopc=1&${ issueNumber }`
     return (
       <div className="issue" id={issueNumber}>
         <div className="col-12">
