@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { map } from 'lodash'
+import { MdOpenInNew } from 'react-icons/md'
+
+import comicBook from '../images/orthopac-comic-page-1.png'
 
 import HEROES from '../constants/heroes'
 
@@ -38,6 +41,31 @@ export default class Carousel extends Component {
     return (
       <div className="mb-5" id="heroes">
         <Flickity options={flickityOptions}>
+          <div className="container mx-5 slide">
+            <div className="card card-comic">
+              <div className="card-body d-flex flex-wrap">
+                <div className="col-12 col-md-5">
+                  <img src={comicBook} className="img-fluid mr-3" alt="Skeletal Man, The Battle of Proliferating Paperwork"/>
+                </div>
+                <div className="col-12 col-md-7">
+                  <div className="d-flex h-100 align-items-center">
+                    <div>
+                      <h1>The Battle of Proliferating Paperwork</h1>
+                      <p>Read about Skeletal Man's Origin Story, in this exclusive comic book!</p>
+                      <a
+                        className="btn btn-primary"
+                        href="/orthopac-comic.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Read Now <MdOpenInNew/>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           {
             map(HEROES, (hero, k) => (
               <HeroSlide key={k} triggerUpdate={triggerUpdate} {...hero} />
