@@ -1,5 +1,5 @@
 const donors = {
-  generalDonations: 1400000,
+  generalDonations: 1500000,
   goal: 2100000,
   fiveK: [
     'Joseph Abboud MD',
