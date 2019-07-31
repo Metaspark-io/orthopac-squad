@@ -311,12 +311,21 @@ $border-radius-b: 2px;
 		border-radius: $border-radius-b;
 		box-shadow: $box-shadow-b;
 
+    //center total
+    height: auto;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+    z-index: 1;
+
 		&:before,
 		&:after {
 			@extend %extend-a;
 			@include absolute-custom(0, 0, 0, initial);
 			width: 0;
 			height: 0;
+      //Hide caret
+      display: none;
 		}
 
 		&:after {
